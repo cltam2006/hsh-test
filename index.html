@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/fonts-archive-futura-std@0.0.0/FuturaStd.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/minion-pro" rel="stylesheet" />
+    <title>HSH frontend</title>
+    <script defer="defer" src="/js/styles.bundle.js"></script>
+    <script defer="defer" src="/js/vendors.bundle.js"></script>
+    <script defer="defer" src="/js/common.bundle.js"></script>
+    <script defer="defer" src="/js/home.bundle.js"></script>
+    <link href="/css/styles.deploy.css" rel="stylesheet" />
+  </head>
+  <body class="page-wrapper">
+    <div id="navHeader"></div>
+    <div id="TopBanner"></div>
+    <div id="FullWithImagesOrVideos"></div>
+    <div id="UpdateCarousel"></div>
+    <div id="HomeStat"></div>
+  </body>
+  <script>
+    window.__initState = window.__initState || {};
+    window.__initState.header = {
+      siteMapTitle: "SiteMap",
+      languages: [
+        { code: "en", label: "English", mobileLabel: "EN" },
+        { code: "zh-hk", label: "中文", mobileLabel: "ZH" },
+      ],
+      currentLanguage: "en",
+      menuItems: [
+        {
+          label: "ABOUT US",
+          link: "/aboutlink",
+          dropdown: [
+            { sub_label: "Corporate Profile", link: "/testlink" },
+            { sub_label: "Leadership", link: "/test2link" },
+            { sub_label: "Our History", link: "/Historylink" },
+            { sub_label: "Research and Technology", link: "/Researchlink" },
+            { sub_label: "Hong Kong Heritage Project", link: "/Projectlink" },
+          ],
+        },
+        {
+          label: "OUR BUSINESSES",
+          link: "/businesseslink",
+          dropdown: [
+            { sub_label: "Team", link: "/teamlink" },
+            { sub_label: "Story", link: "/storylink" },
+          ],
+        },
+        {
+          label: "INVESTORS",
+          link: "/investorslink",
+          dropdown: [
+            { sub_label: "Design", link: "/designlink" },
+            { sub_label: "Development", link: "/developmentlink" },
+          ],
+        },
+        {
+          label: "CORPORATE GOVERNANCE",
+          link: "/governancelink",
+          dropdown: [
+            { sub_label: "Email", link: "/emaillink" },
+            { sub_label: "Phone", link: "/phonelink" },
+          ],
+        },
+        {
+          label: "SUSTAINABLE LUXURY",
+          link: "/sustainabilitylink",
+          dropdown: [
+            { sub_label: "Email", link: "/emaillink" },
+            { sub_label: "Phone", link: "/phonelink" },
+          ],
+        },
+        {
+          label: "MEDIA",
+          link: "/medialink",
+          dropdown: [
+            { sub_label: "Email", link: "/emaillink" },
+            { sub_label: "Phone", link: "/phonelink" },
+          ],
+        },
+        {
+          label: "CAREERS",
+          link: "/careerslink",
+          dropdown: [
+            { sub_label: "Emaillongger", link: "/emaillink" },
+            { sub_label: "Phone", link: "/phonelink" },
+          ],
+        },
+      ],
+      searchText: {
+        en: "Search",
+        zh: "搜尋",
+      },
+      headerIcon: {
+        src: "https://dummyimage.com/350x50/949/F78",
+        alt: "Brand Logo",
+      },
+      headerIconBlack: {
+        src: "https://dummyimage.com/350x50/338/F78",
+        alt: "Brand Logo",
+      },
+      // to control the header is overlay type(main page) or block type (sub page)
+      headerPaddingClass: "", // 2 value ("" / "subPage-padding")
+    };
+
+    window.__initState.headerSearchData = {
+      resultNumberText: '${itemCount} Results for "${query}"',
+      resultNotFoundText:
+        "<h3>Sorry, We couldn’t find ${query}. </h3> <p>Please try again with some different keywords.</p>",
+    };
+
+    window.__initState.topBanner = {
+      items: [
+        {
+          title: "A DIVERSE PORTFOLIO",
+          desc: "In exceptional locations",
+          mediaItems: [
+            {
+              type: "image",
+              caption: "image caption",
+              settings: {
+                src: "https://dummyimage.com/144x375/139E/9ff.png",
+                alt: "alt123",
+                // poster?: string;
+                // captionSrc?: string;
+                // label?: string;
+                // language?: string;
+                // subTitlesSrc?: string;
+                // autoplay?: boolean;
+              },
+            },
+          ],
+        },
+        {
+          title: "222",
+          desc: "In exceptional locations 22",
+          mediaItems: [
+            {
+              type: "image",
+              caption: "image caption",
+              settings: {
+                src: "https://dummyimage.com/144x375/e7E/9ff.png",
+                alt: "alt123",
+                // poster?: string;
+                // captionSrc?: string;
+                // label?: string;
+                // language?: string;
+                // subTitlesSrc?: string;
+                // autoplay?: boolean;
+              },
+            },
+          ],
+        },
+        {
+          title: "333 123 11e1eqw e12e12 e1e1eqwad",
+          desc: "In exceptional locations 333",
+          mediaItems: [
+            {
+              type: "image",
+              caption: "image caption",
+              settings: {
+                src: "https://dummyimage.com/144x375/ea6/9ff.png",
+                alt: "alt123",
+                // poster?: string;
+                // captionSrc?: string;
+                // label?: string;
+                // language?: string;
+                // subTitlesSrc?: string;
+                // autoplay?: boolean;
+              },
+            },
+          ],
+        },
+      ],
+    };
+
+    window.__initState.fullWithImagesOrVideos = {
+      banners: [
+        {
+          section_title: "our businesses",
+          title: "hotels",
+          dacast_video_id: "",
+          desktop_background_image: {
+            src: "https://dummyimage.com/1440x700/e81515/fff.png",
+            alt: "red",
+          },
+          mobile_background_image: {
+            src: "https://dummyimage.com/393x600/e81515/fff.png",
+            alt: "red2",
+          },
+          cta: {
+            href: "#",
+            nameLabel: "explore",
+          },
+        },
+        {
+          section_title: "our businesses",
+          title: "Peak Tram, Retail and Others",
+          dacast_video_id: "",
+          desktop_background_image: {
+            src: "https://dummyimage.com/1440x700/15e815/fff.png",
+            alt: "green",
+          },
+          mobile_background_image: {
+            src: "https://dummyimage.com/393x600/15e815/fff.png",
+            alt: "green2",
+          },
+          cta: {
+            href: "#",
+            nameLabel: "explore",
+          },
+        },
+        {
+          section_title: "our businesses",
+          title: "COMMERCIAL PROPERTIES",
+          dacast_video_id: "",
+          desktop_background_image: {
+            src: "https://dummyimage.com/1440x700/1515e8/fff.png",
+            alt: "blue",
+          },
+          mobile_background_image: {
+            src: "https://dummyimage.com/393x600/1515e8/fff.png",
+            alt: "blue",
+          },
+          cta: {
+            href: "#",
+            nameLabel: "explore",
+          },
+        },
+      ],
+      isPageBanner: false,
+    };
+
+    window.__initState.updateCarousel = {
+      title: "Latest Updates",
+      remarks: "Discover the latest company announcements, projects, and news.",
+      cta: {
+        href: "#",
+        nameLabel: "View all",
+      },
+      items: [
+        {
+          id: "debuts1",
+          media: {
+            alt: "de",
+            src: "https://dummyimage.com/42x48/908070/fff.png",
+          },
+          itemTitle: "The Peninsula London Debuts",
+          date: "07 May 2025",
+          itemCta: {
+            href: "#",
+            nameLabel: "read more",
+          },
+        },
+        {
+          id: "debuts2",
+          media: {
+            alt: "de",
+            src: "https://dummyimage.com/42x48/708070/fff.png",
+          },
+          itemTitle: "The Peninsula London Debuts",
+          date: "02 May 2025",
+          itemCta: {
+            href: "#",
+            nameLabel: "read more",
+          },
+        },
+        {
+          id: "debuts3",
+          media: {
+            alt: "de",
+            src: "https://dummyimage.com/42x48/308070/fff.png",
+          },
+          itemTitle: "The Peninsula London Debuts asd asc qwdqwdasd qscascqw",
+          date: "07 Jun 2025",
+          itemCta: {
+            href: "#",
+            nameLabel: "read more",
+          },
+        },
+        {
+          id: "debuts4",
+          media: {
+            alt: "de",
+            src: "https://dummyimage.com/42x48/308070/fff.png",
+          },
+          itemTitle: "The Peninsula London Debuts asd asc qwdqwdasd qscascqw",
+          date: "07 Aug 2025",
+          itemCta: {
+            href: "#",
+            nameLabel: "read more",
+          },
+        },
+        {
+          id: "debuts5",
+          media: {
+            alt: "de",
+            src: "https://dummyimage.com/42x48/308070/fff.png",
+          },
+          itemTitle: "The Peninsula London Debuts asd asc qwdqwdasd qscascqw",
+          date: "07 Nov 2025",
+          itemCta: {
+            href: "#",
+            nameLabel: "read more",
+          },
+        },
+        {
+          id: "debuts6",
+          media: {
+            alt: "de",
+            src: "https://dummyimage.com/42x48/308070/fff.png",
+          },
+          itemTitle: "The Peninsula London Debuts asd asc qwdqwdasd qscascqw",
+          date: "07 mar 2026",
+          itemCta: {
+            href: "#",
+            nameLabel: "read more",
+          },
+        },
+        {
+          id: "debuts7",
+          media: {
+            alt: "de",
+            src: "https://dummyimage.com/42x48/308070/fff.png",
+          },
+          itemTitle: "The Peninsula London Debuts asd asc qwdqwdasd qscascqw",
+          date: "05 Jun 2026",
+          itemCta: {
+            href: "#",
+            nameLabel: "read more",
+          },
+        },
+        {
+          id: "debuts8",
+          media: {
+            alt: "de",
+            src: "https://dummyimage.com/42x48/308070/fff.png",
+          },
+          itemTitle: "The Peninsula London Debuts asd asc qwdqwdasd qscascqw",
+          date: "07 Jun 2026",
+          itemCta: {
+            href: "#",
+            nameLabel: "read more",
+          },
+        },
+        {
+          id: "debuts9",
+          media: {
+            alt: "de",
+            src: "https://dummyimage.com/42x48/308070/fff.png",
+          },
+          itemTitle: "The Peninsula London Debuts asd asc qwdqwdasd qscascqw",
+          date: "27 Jun 2026",
+          itemCta: {
+            href: "#",
+            nameLabel: "read more",
+          },
+        },
+      ],
+    };
+
+    window.__initState.homeStat = {
+      data: [
+        {
+          id: "stock",
+          iframe: {
+            src: "https://quote.quamhkir.com/quote/0045v2/homepage/en/home-en.html",
+          },
+        },
+        {
+          id: "REVENUE",
+          title: "REVENUE (HK$M)",
+          value: "10,991",
+          date: {
+            prefix: "As at",
+            dateValue: "03/06/2025 14:34",
+          },
+        },
+        {
+          id: "asset",
+          title: "TOTAL ASSETS (HK$M)",
+          value: "54,176",
+          date: {
+            prefix: "As at",
+            dateValue: "03/07/2025 14:39",
+          },
+        },
+      ],
+      cta: {
+        nameLabel: "Discover",
+        href: "#",
+      },
+    };
+
+    window.__initState.footer = {
+      footerSections: [
+        {
+          Title: "OUR BUSINESSES",
+          Id: "businesses-footer",
+          MainUrl: "/ourbusinesses",
+          Links: [
+            { Text: "Hotels", Url: "/" },
+            { Text: "Commercial Properties", Url: "/about" },
+            { Text: "Peak Tram, Retail and Others", Url: "/" },
+            { Text: "Residences", Url: "/" },
+          ],
+        },
+        {
+          Title: "INVESTORS",
+          Id: "investors-footer",
+          MainUrl: "/investors",
+          Links: [
+            { Text: "Financial Results", Url: "/" },
+            { Text: "General Meetings", Url: "/about" },
+            { Text: "Corporate Announcements", Url: "/" },
+            { Text: "Shareholders' Circulars", Url: "/" },
+          ],
+        },
+        {
+          Title: "SUSTAINABLE LUXURY",
+          Id: "sustainable-footer",
+          MainUrl: "/sustainable",
+          Links: [
+            { Text: "Our Guests", Url: "/" },
+            { Text: "Our People", Url: "/about" },
+            { Text: "Our Communities", Url: "/" },
+            { Text: "Sustainability Reports", Url: "/" },
+          ],
+        },
+        {
+          Title: "MEDIA",
+          Id: "media-footer",
+          MainUrl: "/media",
+          Links: [
+            { Text: "Press Releases", Url: "/" },
+            { Text: "Media Library", Url: "/about" },
+          ],
+        },
+      ],
+      footerLinks: [
+        { Text: "Contact Us", Url: "/" },
+        { Text: "Sitemap", Url: "/" },
+        { Text: "Data Privacy and Security Policy", Url: "/" },
+        { Text: "Terms of Use", Url: "/" },
+        { Text: "Conditions of Use", Url: "/" },
+        { Text: "Cookie Policy", Url: "/" },
+      ],
+      socialLinks: [
+        {
+          href: "",
+          aria: "linkedin",
+          className: "icon-linkedin",
+          blank: false,
+        },
+        {
+          href: "",
+          aria: "wechat",
+          className: "icon-wechat",
+          blank: true,
+        },
+        {
+          href: "",
+          aria: "instagram",
+          className: "icon-instagram",
+          blank: true,
+        },
+        {
+          href: "",
+          aria: "facebook",
+          className: "icon-facebook",
+          blank: true,
+        },
+        {
+          href: "",
+          aria: "youtube",
+          className: "icon-youtube",
+          blank: true,
+        },
+        {
+          href: "",
+          aria: "twitter",
+          className: "icon-twitter",
+          blank: true,
+        },
+        {
+          href: "",
+          aria: "weibo",
+          className: "icon-weibo",
+          img: "https://dummyimage.com/24x24",
+          blank: true,
+        },
+      ],
+      breadcrumbs: [
+        { text: "Home", Url: "/" },
+        { text: "Privacy", Url: "/privacy" },
+        { text: "Cookie Policy", Url: "/privacy#cookie-policy" },
+      ],
+      languages: [
+        {
+          code: "en",
+          label: "English",
+          mobileLabel: "EN",
+        },
+        {
+          code: "zh-hk",
+          label: "繁中",
+          mobileLabel: "繁",
+        },
+      ],
+      currentLanguage: "en",
+      copyright:
+        "© 2024 The Hongkong and Shanghai Hotels, Limited. All rights reserved.",
+      hideBreadcrumb: true,
+    };
+  </script>
+</html>
