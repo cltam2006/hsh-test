@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/fonts-archive-futura-std@0.0.0/FuturaStd.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/minion-pro" rel="stylesheet" />
+      <script defer="defer" src="/hsh-test/js/styles.bundle.js"></script>
+    <!-- <script defer="defer" src="/hsh-test/js/vendors.bundle.js"></script> -->
+    <script defer="defer" src="/hsh-test/js/common.bundle.js"></script>
+    <script defer="defer" src="/hsh-test/js/investors.bundle.js"></script>
+    <!-- <script defer="defer" src="/hsh-test/js/vendors.bundle.js"></script> -->
+    <!-- <script defer="defer" src="/hsh-test/js/polyfills.bundle.js"></script> -->
+    <!-- <script defer="defer" src="/hsh-test/js/28.bundle.js"></script>
+    <script defer="defer" src="/hsh-test/js/52.bundle.js"></script> -->
+    <script defer="defer" src="/hsh-test/js/87.bundle.js"></script>
+    <!-- <script defer="defer" src="/hsh-test/js/110.bundle.js"></script>
+    <script defer="defer" src="/hsh-test/js/770.bundle.js"></script>
+    <script defer="defer" src="/hsh-test/js/908.bundle.js"></script> -->
+    <!-- <script defer="defer" src="/hsh-test/js/586/.bundle.js"></script> -->
+    <!-- <script defer="defer" src="/hsh-test/js/653.bundle.js"></script> -->
+    <!-- <script defer="defer" src="/hsh-test/js/770.bundle.js"></script> -->
+    <!-- <script defer="defer" src="/hsh-test/js/816.bundle.js"></script> -->
+    <!-- <script defer="defer" src="/hsh-test/js/852.bundle.js"></script>
+    <script defer="defer" src="/hsh-test/js/933.bundle.js"></script> -->
+    <!-- <script defer="defer" src="/hsh-test/js/new.js"></script> -->
+    <link href="/hsh-test/css/styles.deploy.css" rel="stylesheet" />
+  <title>HSH investors</title>
+</head>
+
+<body class="page-wrapper">
+  <div id="navHeader"></div>
+  <div id="TopBanner"></div>
+  <div class="DevPlaceholder">[-- Hsh TopIntro placeholder --]</div>
+
+  <div id="invertorLandingKeyFacts"></div>
+  <div id="invertorLandingStockInfo"></div>
+  <div id="invertorLandingCharts"></div>
+  <div id="invertorLandingShareholderValue"></div>
+  <div id="navFooter"></div>
+
+  <script>
+    window.__initState = window.__initState || {};
+
+    window.__initState.header = {
+      siteMapTitle: "",
+      languages: [
+
+        {
+          code: 'en',
+          label: 'English',
+          mobileLabel: 'EN'
+        },
+
+
+        {
+          code: 'fr',
+          label: 'Français',
+          mobileLabel: 'FR'
+        },
+
+
+        {
+          code: 'ja-JP',
+          label: '日本語',
+          mobileLabel: '日'
+        },
+
+
+        {
+          code: 'th-th',
+          label: 'ภาษาไทย',
+          mobileLabel: 'ภ'
+        },
+
+
+        {
+          code: 'tr-tr',
+          label: 'Türkçe',
+          mobileLabel: 'TÜ'
+        },
+
+
+        {
+          code: 'zh-cn',
+          label: '简体中文',
+          mobileLabel: '简'
+        },
+
+
+        {
+          code: 'zh-hk',
+          label: '繁體中文',
+          mobileLabel: '繁'
+        },
+
+      ],
+      currentLanguage: 'en', // one of the languages.code, will be equal to the locale in pathname
+      menuItems: [
+
+        {
+          label: 'About Us',
+          link: 'https://stagingcm.hshgroup.com/en/about',
+          dropdown: [
+
+            {
+              sub_label: 'Corporate Profile',
+              link: 'https://stagingcm.hshgroup.com/en/about/corporate-profile'
+            },
+
+
+            {
+              sub_label: 'Leadership',
+              link: 'https://stagingcm.hshgroup.com/en/about/leadership'
+            },
+
+
+            {
+              sub_label: 'History of Innovation',
+              link: 'https://stagingcm.hshgroup.com/en/about/history-of-innovation'
+            },
+
+
+            {
+              sub_label: 'Research and Technology',
+              link: 'https://stagingcm.hshgroup.com/en/about/research-and-technology'
+            },
+
+
+            {
+              sub_label: 'Hong Kong Heritage Project',
+              link: 'https://stagingcm.hshgroup.com/en/about/hong-kong-heritage-project'
+            },
+
+            ,
+          ],
+        },
+
+
+        {
+          label: 'Our Businesses',
+          link: 'https://stagingcm.hshgroup.com/en/our-businesses',
+          dropdown: [
+
+            {
+              sub_label: 'Hotels',
+              link: 'https://stagingcm.hshgroup.com/en/our-businesses/hotels'
+            },
+
+
+            {
+              sub_label: 'Commercial Properties',
+              link: 'https://stagingcm.hshgroup.com/en/our-businesses/commercial-properties'
+            },
+
+
+            {
+              sub_label: 'Peak Tram, Retail and Others',
+              link: 'https://stagingcm.hshgroup.com/en/our-businesses/peak-tram-retail-and-others'
+            },
+
+
+            {
+              sub_label: 'Residences',
+              link: 'https://stagingcm.hshgroup.com/en/our-businesses/residences'
+            },
+
+            ,
+          ],
+        },
+
+
+        {
+          label: 'Investors',
+          link: 'https://stagingcm.hshgroup.com/en/investors',
+          dropdown: [
+
+            {
+              sub_label: 'Financial Results',
+              link: 'https://stagingcm.hshgroup.com/en/investors/financial-results'
+            },
+
+
+            {
+              sub_label: 'General Meetings',
+              link: 'https://stagingcm.hshgroup.com/en/investors/general-meetings'
+            },
+
+
+            {
+              sub_label: 'Corporate Announcements',
+              link: 'https://stagingcm.hshgroup.com/en/investors/corporate-announcements'
+            },
+
+
+            {
+              sub_label: 'Shareholders\' Circulars',
+              link: 'https://stagingcm.hshgroup.com/en/investors/shareholders-circulars'
+            },
+
+
+            {
+              sub_label: 'Shareholder Information',
+              link: 'https://stagingcm.hshgroup.com/en/investors/shareholder-information'
+            },
+
+
+            {
+              sub_label: ' Notices - Replacement of Lost Share Certificates',
+              link: 'https://stagingcm.hshgroup.com/en/investors/notices---replacement-of-lost-share-certificates'
+            },
+
+            ,
+          ],
+        },
+
+
+        {
+          label: 'Corporate Governance',
+          link: 'https://stagingcm.hshgroup.com/en/corporate-governance',
+          dropdown: [
+
+            {
+              sub_label: 'Board Committees',
+              link: 'https://stagingcm.hshgroup.com/en/corporate-governance/board-committees'
+            },
+
+
+            {
+              sub_label: 'Other Committees',
+              link: 'https://stagingcm.hshgroup.com/en/corporate-governance/other-committees'
+            },
+
+
+            {
+              sub_label: 'Shareholders\' Rights',
+              link: 'https://stagingcm.hshgroup.com/en/corporate-governance/shareholders-rights'
+            },
+
+
+            {
+              sub_label: 'Our Code of Conduct',
+              link: 'https://stagingcm.hshgroup.com/en/corporate-governance/our-code-of-conduct'
+            },
+
+
+            {
+              sub_label: 'Speak Up',
+              link: 'https://stagingcm.hshgroup.com/en/corporate-governance/speak-up'
+            },
+
+            ,
+          ],
+        },
+
+
+        {
+          label: 'Sustainable Luxury',
+          link: 'https://stagingcm.hshgroup.com/en/sustainable-luxury',
+          dropdown: [
+
+            {
+              sub_label: 'Our Guests',
+              link: 'https://stagingcm.hshgroup.com/en/sustainable-luxury/our-guests'
+            },
+
+
+            {
+              sub_label: 'Our People',
+              link: 'https://stagingcm.hshgroup.com/en/sustainable-luxury/our-people'
+            },
+
+
+            {
+              sub_label: 'Our Communities',
+              link: 'https://stagingcm.hshgroup.com/en/sustainable-luxury/our-communities'
+            },
+
+
+            {
+              sub_label: 'Sustainability Reports',
+              link: 'https://stagingcm.hshgroup.com/en/sustainable-luxury/sustainability-reports'
+            },
+
+            ,
+          ],
+        },
+
+
+        {
+          label: 'Media',
+          link: 'https://stagingcm.hshgroup.com/en/media',
+          dropdown: [
+
+            {
+              sub_label: 'Media Library',
+              link: 'https://stagingcm.hshgroup.com/en/media/media-library'
+            },
+
+
+            {
+              sub_label: 'Press Releases',
+              link: 'https://stagingcm.hshgroup.com/en/media/press-releases'
+            },
+
+            ,
+          ],
+        },
+
+
+        {
+          label: 'Careers',
+          link: '/en/careers',
+        },
+
+      ],
+      searchText: {
+        en: 'Search Keywords',
+        'zh-hk': '搜索關鍵字',
+      },
+      headerIcon: {
+        src: '/en/-/media/images/hsh/sitesettings/logo-hsh.svg',
+        alt: 'The Hongkong and shanghai hotels logo',
+      },
+      headerIconBlack: {
+        src: '/en/-/media/images/hsh/sitesettings/logo-hsh.svg',
+        alt: 'The Hongkong and shanghai hotels logo',
+      },
+      // to control the header is overlay type(main page) or block type (sub page)
+      headerPaddingClass: 'subPage-padding', // 2 value ("" / "subPage-padding")
+    };
+
+    window.__initState.footer = {
+      footerSections: [
+        {
+          Title: "OUR BUSINESSES",
+          Id: "businesses-footer",
+          Links: [
+            { Text: "Hotels", Url: "/" },
+            { Text: "Commercial Properties", Url: "/about" },
+            { Text: "Peak Tram, Retail and Others", Url: "/" },
+            { Text: "Residences", Url: "/" },
+          ],
+        },
+        {
+          Title: "INVESTORS",
+          Id: "investors-footer",
+          Links: [
+            { Text: "Financial Results", Url: "/" },
+            { Text: "General Meetings", Url: "/about" },
+            { Text: "Corporate Announcements", Url: "/" },
+            { Text: "Shareholders' Circulars", Url: "/" },
+          ],
+        },
+        {
+          Title: "SUSTAINABLE LUXURY",
+          Id: "sustainable-footer",
+          Links: [
+            { Text: "Our Guests", Url: "/" },
+            { Text: "Our People", Url: "/about" },
+            { Text: "Our Communities", Url: "/" },
+            { Text: "Sustainability Reports", Url: "/" },
+          ],
+        },
+        {
+          Title: "MEDIA",
+          Id: "media-footer",
+          Links: [
+            { Text: "Press Releases", Url: "/" },
+            { Text: "Media Library", Url: "/about" },
+          ],
+        },
+      ],
+      footerLinks: [
+        { Text: "Contact Us", Url: "/" },
+        { Text: "Sitemap", Url: "/" },
+        { Text: "Data Privacy and Security Policy", Url: "/" },
+        { Text: "Terms of Use", Url: "/" },
+        { Text: "Conditions of Use", Url: "/" },
+        { Text: "Cookie Policy", Url: "/" },
+      ],
+      socialLinks: [
+        {
+          href: "",
+          aria: "linkedin",
+          className: "icon-linkedin",
+          blank: false,
+        },
+        {
+          href: "",
+          aria: "wechat",
+          className: "icon-wechat",
+          blank: true,
+        },
+        {
+          href: "",
+          aria: "instagram",
+          className: "icon-instagram",
+          blank: true,
+        },
+        {
+          href: "",
+          aria: "facebook",
+          className: "icon-facebook",
+          blank: true,
+        },
+        {
+          href: "",
+          aria: "youtube",
+          className: "icon-youtube",
+          blank: true,
+        },
+        {
+          href: "",
+          aria: "twitter",
+          className: "icon-twitter",
+          blank: true,
+        },
+        {
+          href: "",
+          aria: "weibo",
+          className: "icon-weibo",
+          img: "https://dummyimage.com/24x24",
+          blank: true,
+        },
+      ],
+      breadcrumbs: [
+        { text: "Home", Url: "/" },
+        { text: "Investors", Url: "/investors" },
+      ],
+      copyright:
+        "© 2024 The Hongkong and Shanghai Hotels, Limited. All rights reserved.",
+    };
+
+    window.__initState.topBanner = {
+      items: [
+        {
+          title: "Investors",
+          // desc: "In exceptional locations",
+          mediaItems: [
+            {
+              type: "image",
+              caption: "image caption",
+              settings: {
+                src: "https://dummyimage.com/144x75/19E/fff.png",
+                alt: "alt123",
+                // poster?: string;
+                // captionSrc?: string;
+                // label?: string;
+                // language?: string;
+                // subTitlesSrc?: string;
+                // autoplay?: boolean;
+              },
+            },
+          ],
+        },
+      ],
+    };
+    window.__initState.landingKeyFacts = {
+      title: "Key facts",
+      data: [
+        {
+          title: "Revenue (HK$m)",
+          value: "10,991",
+          desc: "as of 31/12/2024",
+        },
+        {
+          title: "Total Assets (HK$m)",
+          value: "54,176",
+          desc: "as of 31/12/2024",
+        },
+      ],
+    };
+    window.__initState.landingStockInfo = {
+      stockPrice: {
+        url: "/mock/stock-price/home-en.html",
+      },
+      calendar: {
+        title: "FINANCIAL CALENDAR",
+        data: [
+          {
+            eventDay: "15",
+            eventMonth: "May",
+            eventDate: "15 May 2024",
+            title: "First Quarter 2024 Unaudited Operating Statistics",
+            cta: {
+              href: "#",
+              nameLabel: "Add To Calendar",
+              iconNameRight: "CtaCalendar",
+            },
+          },
+          {
+            eventDay: "22",
+            eventMonth: "May",
+            eventDate: "22 May 2024",
+            title: "Annual General Meeting",
+          },
+          {
+            eventDay: "15",
+            eventMonth: "Aug",
+            eventDate: "15 Aug 2024",
+            title: "Second Quarter 2024 Unaudited Operating Statistics",
+          },
+        ],
+      },
+    };
+
+
+    window.__initState.headerSearchData =
+    {
+      resultNumberText: '${itemCount} Results for "${query}"',
+      resultNotFoundText: '<h3>Sorry, We couldn’t find ${query}. </h3> <p>Please try again with some different keywords.</p>',
+    }
+    // Prod data
+    window.__initState.landingCharts = {
+      title: "Assets Growth Over 10 Years",
+      data: [
+        {
+          chart: {
+            yAxisLabel: "Total Assets (HK$m)",
+            data: [
+              {
+                x: "2015",
+                y: 45089,
+              },
+
+              {
+                x: "2016",
+                y: 45870,
+              },
+
+              {
+                x: "2017",
+                y: 48520,
+              },
+
+              {
+                x: "2018",
+                y: 48992,
+              },
+
+              {
+                x: "2019",
+                y: 53061,
+              },
+
+              {
+                x: "2020",
+                y: 53679,
+              },
+
+              {
+                x: "2021",
+                y: 55685,
+              },
+
+              {
+                x: "2022",
+                y: 56581,
+              },
+
+              {
+                x: "2023",
+                y: 57869,
+              },
+
+              {
+                x: "2024",
+                y: 54176,
+              },
+            ],
+          },
+        },
+      ],
+    };
+
+    window.__initState.landingShareholderValue = {
+      title: "Creating shareholder value",
+      desc: "We create significant value for our shareholders from the appreciation in capital value of our properties as well as from the increasing operating yield as the asset continues to grow its income over time.",
+      // hsh-226 more info by cat, not only one
+      categories: [
+        {
+          id: "Key",
+          label: "Key Financial Data",
+          moreInfoCta: {
+            href: "/investors/shareholder-value",
+            nameLabel: "More Info1",
+          },
+        },
+        {
+          id: "Corporate",
+          label: "Corporate Announcements",
+          moreInfoCta: {
+            href: "/investors/shareholder-value2",
+            nameLabel: "More Info2",
+          },
+        },
+        {
+          id: "Shareholders",
+          label: "Shareholders' Circulars",
+          moreInfoCta: {
+            href: "/investors/shareholder-value3",
+            nameLabel: "More Info3",
+          },
+        },
+      ],
+      data: [
+        {
+          title: "Unaudited Operating Statistics - First Quarter of 2025",
+          buttons: [
+            {
+              href: "https://www.google.com/",
+              target: "_blank",
+              nameLabel: "VIEW pdf",
+            },
+          ],
+          categories: ["Key", "Shareholders"],
+        },
+        {
+          title: "Unaudited Operating Statistics – Fourth Quarter of 2024",
+          buttons: [
+            {
+              href: "https://www.google.com/",
+              target: "_blank",
+              nameLabel: "VIEW pdf",
+            },
+          ],
+          categories: ["Corporate"],
+        },
+        {
+          title: "Unaudited Operating Statistics - Third Quarter of 2024",
+          buttons: [
+            {
+              href: "https://www.google.com/",
+              target: "_blank",
+              nameLabel: "VIEW pdf",
+            },
+          ],
+          categories: ["Key", "Corporate", "Shareholders"],
+        },
+      ],
+    };
+  </script>
+</body>
+
+</html>
