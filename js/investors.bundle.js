@@ -43427,7 +43427,7 @@
               _y0: s,
               _voronoiY: u,
             } = e,
-            c = { x: o ?? n ?? t, x0: r ?? t, y: u ?? a ?? i, y0: s ?? i };
+            c = { x: o || n || t, x0: r || t, y: u || a || i, y0: s || i };
           return cn()({}, c, e);
         }
         function bn(e, t) {
