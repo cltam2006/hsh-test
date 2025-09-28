@@ -1,78 +1,3 @@
-"use strict";
-require("core-js/modules/es.symbol.description.js");
-require("core-js/modules/es.array.reverse.js");
-require("core-js/modules/es.array.unscopables.flat.js");
-require("core-js/modules/es.array-buffer.slice.js");
-require("core-js/modules/es.object.from-entries.js");
-require("core-js/modules/es.promise.finally.js");
-require("core-js/modules/es.string.replace.js");
-require("core-js/modules/es.string.trim.js");
-require("core-js/modules/es.string.trim-end.js");
-require("core-js/modules/es.typed-array.float64-array.js");
-require("core-js/modules/es.typed-array.int8-array.js");
-require("core-js/modules/es.typed-array.uint8-array.js");
-require("core-js/modules/es.typed-array.uint8-clamped-array.js");
-require("core-js/modules/es.typed-array.fill.js");
-require("core-js/modules/es.typed-array.from.js");
-require("core-js/modules/es.typed-array.set.js");
-require("core-js/modules/es.typed-array.sort.js");
-require("core-js/modules/esnext.global-this.js");
-require("core-js/modules/esnext.string.match-all.js");
-require("core-js/modules/web.dom-collections.iterator.js");
-require("core-js/modules/web.immediate.js");
-require("core-js/modules/web.queue-microtask.js");
-require("core-js/modules/web.url.js");
-require("core-js/modules/web.url.to-json.js");
-require("core-js/modules/web.url-search-params.js");
-var _templateObject,
-  _templateObject2,
-  _templateObject3,
-  _templateObject4,
-  _templateObject5,
-  _templateObject6,
-  _templateObject7,
-  _templateObject8,
-  _templateObject9,
-  _templateObject0,
-  _templateObject1,
-  _templateObject10,
-  _templateObject11,
-  _templateObject12;
-function _taggedTemplateLiteral(e, t) {
-  return (
-    t || (t = e.slice(0)),
-    Object.freeze(
-      Object.defineProperties(e, { raw: { value: Object.freeze(t) } })
-    )
-  );
-}
-function _defineProperty(e, r, t) {
-  return (
-    (r = _toPropertyKey(r)) in e
-      ? Object.defineProperty(e, r, {
-          value: t,
-          enumerable: !0,
-          configurable: !0,
-          writable: !0,
-        })
-      : (e[r] = t),
-    e
-  );
-}
-function _toPropertyKey(t) {
-  var i = _toPrimitive(t, "string");
-  return "symbol" == typeof i ? i : i + "";
-}
-function _toPrimitive(t, r) {
-  if ("object" != typeof t || !t) return t;
-  var e = t[Symbol.toPrimitive];
-  if (void 0 !== e) {
-    var i = e.call(t, r || "default");
-    if ("object" != typeof i) return i;
-    throw new TypeError("@@toPrimitive must return a primitive value.");
-  }
-  return ("string" === r ? String : Number)(t);
-}
 !(function () {
   var e,
     t,
@@ -19091,7 +19016,7 @@ function _toPrimitive(t, r) {
           );
         }
         function Xs(e, t, n) {
-          if (null !== e) {
+          if (null !== e)
             if (e.memoizedProps !== t.pendingProps) Cs = !0;
             else {
               if (!(Zs(e, n) || 128 & t.flags))
@@ -19156,7 +19081,7 @@ function _toPrimitive(t, r) {
                 );
               Cs = !!(131072 & e.flags);
             }
-          } else (Cs = !1), io && 1048576 & t.flags && eo(t, Gr, t.index);
+          else (Cs = !1), io && 1048576 & t.flags && eo(t, Gr, t.index);
           switch (((t.lanes = 0), t.tag)) {
             case 16:
               e: {
@@ -19798,7 +19723,7 @@ function _toPrimitive(t, r) {
               return wo(t.type), nu(t), null;
             case 19:
               if ((B(ls), null === (o = t.memoizedState))) return nu(t), null;
-              if (((r = !!(128 & t.flags)), null === (i = o.rendering))) {
+              if (((r = !!(128 & t.flags)), null === (i = o.rendering)))
                 if (r) tu(o, !1);
                 else {
                   if (0 !== dc || (null !== e && 128 & e.flags))
@@ -19828,7 +19753,7 @@ function _toPrimitive(t, r) {
                     tu(o, !1),
                     (t.lanes = 4194304));
                 }
-              } else {
+              else {
                 if (!r)
                   if (null !== (e = fs(i))) {
                     if (
@@ -20760,8 +20685,8 @@ function _toPrimitive(t, r) {
                 4 & r)
               ) {
                 var i = null !== n ? n.memoizedState : null;
-                if (((r = e.memoizedState), null === n)) {
-                  if (null === r) {
+                if (((r = e.memoizedState), null === n))
+                  if (null === r)
                     if (null === e.stateNode) {
                       e: {
                         (r = e.type),
@@ -20846,8 +20771,8 @@ function _toPrimitive(t, r) {
                       }
                       e.stateNode = r;
                     } else qf(o, e.type, e.stateNode);
-                  } else e.stateNode = Nf(o, r, e.memoizedProps);
-                } else
+                  else e.stateNode = Nf(o, r, e.memoizedProps);
+                else
                   i !== r
                     ? (null === i
                         ? null !== n.stateNode &&
@@ -23153,13 +23078,13 @@ function _toPrimitive(t, r) {
                 ("input" === c && "file" === s.type)
               )
                 var y = zn;
-              else if (Dn(s)) {
+              else if (Dn(s))
                 if (Fn) y = Yn;
                 else {
                   y = $n;
                   var m = Wn;
                 }
-              } else
+              else
                 !(c = s.nodeName) ||
                 "input" !== c.toLowerCase() ||
                 ("checkbox" !== s.type && "radio" !== s.type)
@@ -23928,7 +23853,7 @@ function _toPrimitive(t, r) {
             o = 0;
           do {
             var i = n.nextSibling;
-            if ((e.removeChild(n), i && 8 === i.nodeType)) {
+            if ((e.removeChild(n), i && 8 === i.nodeType))
               if ("/$" === (n = i.data)) {
                 if (0 < r && 8 > r) {
                   n = r;
@@ -23954,7 +23879,7 @@ function _toPrimitive(t, r) {
                 "$" === n || "$?" === n || "$!" === n
                   ? o++
                   : (r = n.charCodeAt(0) - 48);
-            } else r = 0;
+            else r = 0;
             n = i;
           } while (n);
           Od(t);
@@ -28945,11 +28870,11 @@ function _toPrimitive(t, r) {
                 case Le:
                   if (u.isSpecial()) {
                     if (((c = Pe), "/" !== i && "\\" !== i)) continue;
-                  } else if (t || "?" !== i) {
+                  } else if (t || "?" !== i)
                     if (t || "#" !== i) {
                       if (i !== r && ((c = Pe), "/" !== i)) continue;
                     } else (u.fragment = ""), (c = Ie);
-                  } else (u.query = ""), (c = Re);
+                  else (u.query = ""), (c = Re);
                   break;
                 case Pe:
                   if (
@@ -42911,30 +42836,20 @@ function _toPrimitive(t, r) {
             .sort()
             .filter((t) => void 0 !== e[t])
             .map((t) => {
-              return ""
-                .concat(t, "_")
-                .concat(
-                  "root" === t
-                    ? ((n = e.root),
-                      n
-                        ? (Lt.has(n) || ((Pt += 1), Lt.set(n, Pt.toString())),
-                          Lt.get(n))
-                        : "0")
-                    : e[t]
-                );
+              return `${t}_${
+                "root" === t
+                  ? ((n = e.root),
+                    n
+                      ? (Lt.has(n) || ((Pt += 1), Lt.set(n, Pt.toString())),
+                        Lt.get(n))
+                      : "0")
+                  : e[t]
+              }`;
               var n;
             })
             .toString();
         }
-        function It(e, t) {
-          let n =
-            arguments.length > 2 && arguments[2] !== undefined
-              ? arguments[2]
-              : {};
-          let r =
-            arguments.length > 3 && arguments[3] !== undefined
-              ? arguments[3]
-              : Nt;
+        function It(e, t, n = {}, r = Nt) {
           if (void 0 === window.IntersectionObserver && void 0 !== r) {
             const o = e.getBoundingClientRect();
             return (
@@ -43005,21 +42920,18 @@ function _toPrimitive(t, r) {
               r = e.onClickImage,
               o = e.customImageClass,
               i = void 0 === o ? " " : o,
-              a = (function () {
-                let {
-                  threshold: e,
-                  delay: t,
-                  trackVisibility: n,
-                  rootMargin: r,
-                  root: o,
-                  triggerOnce: i,
-                  skip: a,
-                  initialInView: s,
-                  fallbackInView: u,
-                  onChange: c,
-                } = arguments.length > 0 && arguments[0] !== undefined
-                  ? arguments[0]
-                  : {};
+              a = (function ({
+                threshold: e,
+                delay: t,
+                trackVisibility: n,
+                rootMargin: r,
+                root: o,
+                triggerOnce: i,
+                skip: a,
+                initialInView: s,
+                fallbackInView: u,
+                onChange: c,
+              } = {}) {
                 var l;
                 const [f, d] = y.useState(null),
                   p = y.useRef(c),
@@ -43663,7 +43575,7 @@ function _toPrimitive(t, r) {
               e.reduce((e, r, c) => {
                 let l = e;
                 const f = r.type && r.type.role,
-                  d = r.props.name || "".concat(f, "-").concat(s[c]);
+                  d = r.props.name || `${f}-${s[c]}`;
                 if (r.props && r.props.children) {
                   const e = Object.assign({}, r.props, vn()(n, i)),
                     t =
@@ -43675,7 +43587,7 @@ function _toPrimitive(t, r) {
                             const n = Object.assign({}, t.props, vn()(e, i));
                             return y.cloneElement(t, n);
                           }),
-                    s = t.map((e, t) => "".concat(d, "-").concat(t)),
+                    s = t.map((e, t) => `${d}-${t}`),
                     u = a(t, s, r);
                   l = o(l, u);
                 } else {
@@ -43705,14 +43617,10 @@ function _toPrimitive(t, r) {
           );
         }
         const Rn = (0, y.forwardRef)((e, t) => {
-          var _Sn;
           const { desc: n, id: r, tabIndex: o, origin: i, ...a } = e,
             s = {
               vectorEffect: "non-scaling-stroke",
-              id:
-                (_Sn = Sn(r, e)) === null || _Sn === void 0
-                  ? void 0
-                  : _Sn.toString(),
+              id: Sn(r, e)?.toString(),
               tabIndex: Sn(o, e),
               ...a,
             };
@@ -43741,14 +43649,10 @@ function _toPrimitive(t, r) {
           );
         }
         const zn = (0, y.forwardRef)((e, t) => {
-            var _Sn2;
             const { desc: n, id: r, tabIndex: o, origin: i, ...a } = e,
               s = {
                 vectorEffect: "non-scaling-stroke",
-                id:
-                  (_Sn2 = Sn(r, e)) === null || _Sn2 === void 0
-                    ? void 0
-                    : _Sn2.toString(),
+                id: Sn(r, e)?.toString(),
                 tabIndex: Sn(o, e),
                 ...a,
               };
@@ -43824,8 +43728,7 @@ function _toPrimitive(t, r) {
                 let t = !1;
                 return (
                   Wn.startsWith.forEach((n) => {
-                    new RegExp("\\b(".concat(n, ")(\\w|-)+"), "g").test(e) &&
-                      (t = !0);
+                    new RegExp(`\\b(${n})(\\w|-)+`, "g").test(e) && (t = !0);
                   }),
                   t
                 );
@@ -43906,7 +43809,6 @@ function _toPrimitive(t, r) {
           role: "img",
         };
         const er = (e) => {
-          var _l$pointerEvents, _l$touchAction, _l$position;
           const {
             role: t,
             title: n,
@@ -43934,22 +43836,18 @@ function _toPrimitive(t, r) {
             descId: _,
             containerRef: A,
             localContainerRef: C,
-          } = (function (e, _t$containerId) {
+          } = (function (e) {
             const t = { ...Jn, ...e },
               { title: n, desc: r, width: o, height: i, responsive: a } = t,
               s = (0, y.useRef)(null),
               u = (0, y.useRef)(Un()("victory-container-")),
-              c =
-                (_t$containerId = t.containerId) !== null &&
-                _t$containerId !== void 0
-                  ? _t$containerId
-                  : u.current,
-              l = (e) => "".concat(c, "-").concat(e),
+              c = t.containerId ?? u.current,
+              l = (e) => `${c}-${e}`,
               f = Gn(t),
               d = a
                 ? { width: "100%", height: "100%" }
                 : { width: o, height: i },
-              p = a ? "0 0 ".concat(o, " ").concat(i) : void 0,
+              p = a ? `0 0 ${o} ${i}` : void 0,
               h = a ? t.preserveAspectRatio : void 0,
               v =
                 [n && l("title"), t["aria-labelledby"]]
@@ -43976,15 +43874,13 @@ function _toPrimitive(t, r) {
           })(e);
           return (
             y.useEffect(() => {
-              if (!(p !== null && p !== void 0 && p.onWheel)) return;
+              if (!p?.onWheel) return;
               const e = (e) => e.preventDefault(),
-                t = C === null || C === void 0 ? void 0 : C.current;
+                t = C?.current;
               return (
-                t !== null && t !== void 0 && t.addEventListener("wheel", e),
+                t?.addEventListener("wheel", e),
                 () => {
-                  t === null ||
-                    t === void 0 ||
-                    t.removeEventListener("wheel", e);
+                  t?.removeEventListener("wheel", e);
                 }
               );
             }, []),
@@ -43994,34 +43890,11 @@ function _toPrimitive(t, r) {
                 className: i,
                 style: {
                   ...l,
-                  width: d
-                    ? l === null || l === void 0
-                      ? void 0
-                      : l.width
-                    : m.width,
-                  height: d
-                    ? l === null || l === void 0
-                      ? void 0
-                      : l.height
-                    : m.height,
-                  pointerEvents:
-                    (_l$pointerEvents =
-                      l === null || l === void 0 ? void 0 : l.pointerEvents) !==
-                      null && _l$pointerEvents !== void 0
-                      ? _l$pointerEvents
-                      : "none",
-                  touchAction:
-                    (_l$touchAction =
-                      l === null || l === void 0 ? void 0 : l.touchAction) !==
-                      null && _l$touchAction !== void 0
-                      ? _l$touchAction
-                      : "none",
-                  position:
-                    (_l$position =
-                      l === null || l === void 0 ? void 0 : l.position) !==
-                      null && _l$position !== void 0
-                      ? _l$position
-                      : "relative",
+                  width: d ? l?.width : m.width,
+                  height: d ? l?.height : m.height,
+                  pointerEvents: l?.pointerEvents ?? "none",
+                  touchAction: l?.touchAction ?? "none",
+                  position: l?.position ?? "relative",
                 },
                 "data-ouia-component-id": h,
                 "data-ouia-component-type": g,
@@ -45174,11 +45047,7 @@ function _toPrimitive(t, r) {
           return this;
         }
         class Wo extends Map {
-          constructor(e) {
-            let t =
-              arguments.length > 1 && arguments[1] !== undefined
-                ? arguments[1]
-                : Ko;
+          constructor(e, t = Ko) {
             if (
               (super(),
               Object.defineProperties(this, {
@@ -45203,18 +45072,15 @@ function _toPrimitive(t, r) {
           }
         }
         Set;
-        function $o(_ref, n) {
-          let { _intern: e, _key: t } = _ref;
+        function $o({ _intern: e, _key: t }, n) {
           const r = t(n);
           return e.has(r) ? e.get(r) : n;
         }
-        function Go(_ref2, n) {
-          let { _intern: e, _key: t } = _ref2;
+        function Go({ _intern: e, _key: t }, n) {
           const r = t(n);
           return e.has(r) ? e.get(r) : (e.set(r, n), n);
         }
-        function Yo(_ref3, n) {
-          let { _intern: e, _key: t } = _ref3;
+        function Yo({ _intern: e, _key: t }, n) {
           const r = t(n);
           return e.has(r) && ((n = e.get(r)), e.delete(r)), n;
         }
@@ -45394,10 +45260,10 @@ function _toPrimitive(t, r) {
           if (!(i >= o)) return [];
           const s = i - o + 1,
             u = new Array(s);
-          if (r) {
+          if (r)
             if (a < 0) for (let e = 0; e < s; ++e) u[e] = (i - e) / -a;
             else for (let e = 0; e < s; ++e) u[e] = (i - e) * a;
-          } else if (a < 0) for (let e = 0; e < s; ++e) u[e] = (o + e) / -a;
+          else if (a < 0) for (let e = 0; e < s; ++e) u[e] = (o + e) / -a;
           else for (let e = 0; e < s; ++e) u[e] = (o + e) * a;
           return u;
         }
@@ -45434,15 +45300,7 @@ function _toPrimitive(t, r) {
         }
         function li(e) {
           let t, n, r;
-          function o(e, r) {
-            let o =
-              arguments.length > 2 && arguments[2] !== undefined
-                ? arguments[2]
-                : 0;
-            let i =
-              arguments.length > 3 && arguments[3] !== undefined
-                ? arguments[3]
-                : e.length;
+          function o(e, r, o = 0, i = e.length) {
             if (o < i) {
               if (0 !== t(r, r)) return i;
               do {
@@ -45460,27 +45318,11 @@ function _toPrimitive(t, r) {
               : ((t = e === ui || e === ci ? e : fi), (n = e), (r = e)),
             {
               left: o,
-              center: function (e, t) {
-                let n =
-                  arguments.length > 2 && arguments[2] !== undefined
-                    ? arguments[2]
-                    : 0;
-                let i =
-                  arguments.length > 3 && arguments[3] !== undefined
-                    ? arguments[3]
-                    : e.length;
+              center: function (e, t, n = 0, i = e.length) {
                 const a = o(e, t, n, i - 1);
                 return a > n && r(e[a - 1], t) > -r(e[a], t) ? a - 1 : a;
               },
-              right: function (e, r) {
-                let o =
-                  arguments.length > 2 && arguments[2] !== undefined
-                    ? arguments[2]
-                    : 0;
-                let i =
-                  arguments.length > 3 && arguments[3] !== undefined
-                    ? arguments[3]
-                    : e.length;
+              right: function (e, r, o = 0, i = e.length) {
                 if (o < i) {
                   if (0 !== t(r, r)) return i;
                   do {
@@ -45518,36 +45360,12 @@ function _toPrimitive(t, r) {
           Si = "\\s*([+-]?(?:\\d*\\.)?\\d+(?:[eE][+-]?\\d+)?)\\s*",
           ki = "\\s*([+-]?(?:\\d*\\.)?\\d+(?:[eE][+-]?\\d+)?)%\\s*",
           Ei = /^#([0-9a-f]{3,8})$/,
-          _i = new RegExp(
-            "^rgb\\(".concat(wi, ",").concat(wi, ",").concat(wi, "\\)$")
-          ),
-          Ai = new RegExp(
-            "^rgb\\(".concat(ki, ",").concat(ki, ",").concat(ki, "\\)$")
-          ),
-          Ci = new RegExp(
-            "^rgba\\("
-              .concat(wi, ",")
-              .concat(wi, ",")
-              .concat(wi, ",")
-              .concat(Si, "\\)$")
-          ),
-          Oi = new RegExp(
-            "^rgba\\("
-              .concat(ki, ",")
-              .concat(ki, ",")
-              .concat(ki, ",")
-              .concat(Si, "\\)$")
-          ),
-          Ti = new RegExp(
-            "^hsl\\(".concat(Si, ",").concat(ki, ",").concat(ki, "\\)$")
-          ),
-          ji = new RegExp(
-            "^hsla\\("
-              .concat(Si, ",")
-              .concat(ki, ",")
-              .concat(ki, ",")
-              .concat(Si, "\\)$")
-          ),
+          _i = new RegExp(`^rgb\\(${wi},${wi},${wi}\\)$`),
+          Ai = new RegExp(`^rgb\\(${ki},${ki},${ki}\\)$`),
+          Ci = new RegExp(`^rgba\\(${wi},${wi},${wi},${Si}\\)$`),
+          Oi = new RegExp(`^rgba\\(${ki},${ki},${ki},${Si}\\)$`),
+          Ti = new RegExp(`^hsl\\(${Si},${ki},${ki}\\)$`),
+          ji = new RegExp(`^hsla\\(${Si},${ki},${ki},${Si}\\)$`),
           Mi = {
             aliceblue: 15792383,
             antiquewhite: 16444375,
@@ -45781,16 +45599,13 @@ function _toPrimitive(t, r) {
           (this.r = +e), (this.g = +t), (this.b = +n), (this.opacity = +r);
         }
         function Fi() {
-          return "#".concat(Hi(this.r)).concat(Hi(this.g)).concat(Hi(this.b));
+          return `#${Hi(this.r)}${Hi(this.g)}${Hi(this.b)}`;
         }
         function Bi() {
           const e = qi(this.opacity);
-          return ""
-            .concat(1 === e ? "rgb(" : "rgba(")
-            .concat(Ui(this.r), ", ")
-            .concat(Ui(this.g), ", ")
-            .concat(Ui(this.b))
-            .concat(1 === e ? ")" : ", ".concat(e, ")"));
+          return `${1 === e ? "rgb(" : "rgba("}${Ui(this.r)}, ${Ui(
+            this.g
+          )}, ${Ui(this.b)}${1 === e ? ")" : `, ${e})`}`;
         }
         function qi(e) {
           return isNaN(e) ? 1 : Math.max(0, Math.min(1, e));
@@ -45929,11 +45744,9 @@ function _toPrimitive(t, r) {
               hex: Fi,
               formatHex: Fi,
               formatHex8: function () {
-                return "#"
-                  .concat(Hi(this.r))
-                  .concat(Hi(this.g))
-                  .concat(Hi(this.b))
-                  .concat(Hi(255 * (isNaN(this.opacity) ? 1 : this.opacity)));
+                return `#${Hi(this.r)}${Hi(this.g)}${Hi(this.b)}${Hi(
+                  255 * (isNaN(this.opacity) ? 1 : this.opacity)
+                )}`;
               },
               formatRgb: Bi,
               toString: Bi,
@@ -45991,12 +45804,9 @@ function _toPrimitive(t, r) {
               },
               formatHsl() {
                 const e = qi(this.opacity);
-                return ""
-                  .concat(1 === e ? "hsl(" : "hsla(")
-                  .concat(Gi(this.h), ", ")
-                  .concat(100 * Yi(this.s), "%, ")
-                  .concat(100 * Yi(this.l), "%")
-                  .concat(1 === e ? ")" : ", ".concat(e, ")"));
+                return `${1 === e ? "hsl(" : "hsla("}${Gi(this.h)}, ${
+                  100 * Yi(this.s)
+                }%, ${100 * Yi(this.l)}%${1 === e ? ")" : `, ${e})`}`;
               },
             })
           );
@@ -47042,11 +46852,7 @@ function _toPrimitive(t, r) {
           }
           return n;
         }
-        function ls() {
-          let e =
-            arguments.length > 0 && arguments[0] !== undefined
-              ? arguments[0]
-              : ui;
+        function ls(e = ui) {
           if (e === ui) return fs;
           if ("function" != typeof e)
             throw new TypeError("compare is not a function");
@@ -47061,16 +46867,7 @@ function _toPrimitive(t, r) {
             (e < t ? -1 : e > t ? 1 : 0)
           );
         }
-        function ds(e, t) {
-          let n =
-            arguments.length > 2 && arguments[2] !== undefined
-              ? arguments[2]
-              : 0;
-          let r =
-            arguments.length > 3 && arguments[3] !== undefined
-              ? arguments[3]
-              : 1 / 0;
-          let o = arguments.length > 4 ? arguments[4] : undefined;
+        function ds(e, t, n = 0, r = 1 / 0, o) {
           if (
             ((t = Math.floor(t)),
             (n = Math.floor(Math.max(0, n))),
@@ -47137,11 +46934,7 @@ function _toPrimitive(t, r) {
             return a + (cs(e.subarray(i + 1)) - a) * (o - i);
           }
         }
-        function vs(e, t) {
-          let n =
-            arguments.length > 2 && arguments[2] !== undefined
-              ? arguments[2]
-              : di;
+        function vs(e, t, n = di) {
           if ((r = e.length) && !isNaN((t = +t))) {
             if (t <= 0 || r < 2) return +n(e[0], 0, e);
             if (t >= 1) return +n(e[r - 1], r - 1, e);
@@ -47631,10 +47424,7 @@ function _toPrimitive(t, r) {
           ];
           function s(t, n, r) {
             const o = Math.abs(n - t) / r,
-              i = li((_ref4) => {
-                let [, , e] = _ref4;
-                return e;
-              }).right(a, o);
+              i = li(([, , e]) => e).right(a, o);
             if (i === a.length) return e.every(si(t / _s, n / _s, r));
             if (0 === i) return Ts.every(Math.max(si(t, n, r), 1));
             const [s, u] = a[o / a[i - 1][2] < a[i][2] / o ? i - 1 : i];
@@ -48648,9 +48438,9 @@ function _toPrimitive(t, r) {
         }
         function tl(e) {
           if (Qc(e)) {
-            const t = "scale".concat(
-              ((e) => e && e[0].toUpperCase() + e.slice(1))(e)
-            );
+            const t = `scale${((e) => e && e[0].toUpperCase() + e.slice(1))(
+              e
+            )}`;
             return r[t]();
           }
           return Fa();
@@ -48736,7 +48526,7 @@ function _toPrimitive(t, r) {
         function dl(e, t, n) {
           if ((void 0 === n && (n = "ascending"), !t)) return e;
           let r = t;
-          ("x" !== t && "y" !== t) || (r = "_".concat(t));
+          ("x" !== t && "y" !== t) || (r = `_${t}`);
           const o = "ascending" === n ? "asc" : "desc";
           return Do()(e, r, o);
         }
@@ -48744,7 +48534,7 @@ function _toPrimitive(t, r) {
           const n = 1 / Number.MAX_SAFE_INTEGER,
             r = { x: ol(t, "x"), y: ol(t, "y") };
           if ("log" !== r.x && "log" !== r.y) return e;
-          const o = (e, t) => "log" !== r[t] || 0 !== e["_".concat(t)];
+          const o = (e, t) => "log" !== r[t] || 0 !== e[`_${t}`];
           return e.map((e) =>
             o(e, "x") && o(e, "y") && o(e, "y0")
               ? e
@@ -48822,9 +48612,8 @@ function _toPrimitive(t, r) {
                       return (
                         void 0 !== r &&
                           ("string" == typeof r && a[t]
-                            ? ((e["".concat(t, "Name")] = r),
-                              (e["_".concat(t)] = a[t][r]))
-                            : (e["_".concat(t)] = r)),
+                            ? ((e[`${t}Name`] = r), (e[`_${t}`] = a[t][r]))
+                            : (e[`_${t}`] = r)),
                         e
                       );
                     }, {}),
@@ -48898,14 +48687,8 @@ function _toPrimitive(t, r) {
             o = "max" === n ? -1 / 0 : 1 / 0;
           let i = !1;
           const a = e.flat().reduce((e, n) => {
-            const o =
-                void 0 !== n["_".concat(t, "0")]
-                  ? n["_".concat(t, "0")]
-                  : n["_".concat(t)],
-              a =
-                void 0 !== n["_".concat(t, "1")]
-                  ? n["_".concat(t, "1")]
-                  : n["_".concat(t)],
+            const o = void 0 !== n[`_${t}0`] ? n[`_${t}0`] : n[`_${t}`],
+              a = void 0 !== n[`_${t}1`] ? n[`_${t}1`] : n[`_${t}`],
               s = r([o, a]);
             return (i = i || o instanceof Date || a instanceof Date), r([e, s]);
           }, o);
@@ -49034,7 +48817,7 @@ function _toPrimitive(t, r) {
             ? Dl(
                 c,
                 (function (e, t) {
-                  const n = "_".concat(t);
+                  const n = `_${t}`;
                   return e
                     .flat()
                     .map((e) => (e[n] && void 0 !== e[n][1] ? e[n][1] : e[n]));
@@ -49216,7 +48999,7 @@ function _toPrimitive(t, r) {
         }
         function Vl(e) {
           const { tickValues: t, tickFormat: n } = e;
-          if (0 === (t === null || t === void 0 ? void 0 : t.length)) return [];
+          if (0 === t?.length) return [];
           const r = Nl(e),
             o = e.stringMap && e.stringMap[r];
           let i = t;
@@ -49270,10 +49053,8 @@ function _toPrimitive(t, r) {
           }
           if (n && Array.isArray(n)) {
             const t = Vl(e),
-              r = t === null || t === void 0 ? void 0 : t.map((e) => e.index),
-              o = n.filter((e, t) =>
-                r === null || r === void 0 ? void 0 : r.includes(t)
-              );
+              r = t?.map((e) => e.index),
+              o = n.filter((e, t) => r?.includes(t));
             return (e, t) => o[t];
           }
           if (n && jn(n)) {
@@ -49295,8 +49076,7 @@ function _toPrimitive(t, r) {
           void 0 === n && (n = !1);
           const { tickCount: r } = e,
             o = Vl(e);
-          if (0 === (o === null || o === void 0 ? void 0 : o.length))
-            return [""];
+          if (0 === o?.length) return [""];
           const i = o ? o.map((e) => e.value) : void 0;
           if (i) return $l(i, r);
           if (t.ticks && jn(t.ticks)) {
@@ -49314,10 +49094,7 @@ function _toPrimitive(t, r) {
         function Yl(e, t) {
           const { polar: n, startAngle: r = 0, endAngle: o = 360 } = e,
             i = Vl(e),
-            a =
-              i && 0 !== (i === null || i === void 0 ? void 0 : i.length)
-                ? i.map((e) => e.value)
-                : void 0;
+            a = i && 0 !== i?.length ? i.map((e) => e.value) : void 0;
           if (!Array.isArray(a)) return;
           const s = Ml(e, t),
             u = jl(e, t),
@@ -49371,7 +49148,7 @@ function _toPrimitive(t, r) {
                     return (
                       Array.isArray(n.target)
                         ? n.target.includes(t)
-                        : "".concat(n.target) == "".concat(t)
+                        : `${n.target}` == `${t}`
                     )
                       ? e.concat(n)
                       : e;
@@ -49381,7 +49158,7 @@ function _toPrimitive(t, r) {
                 return void 0 !== n && "parent" !== t
                   ? r.filter((e) => {
                       const t = e.eventKey,
-                        r = (e) => !e || "".concat(e) == "".concat(n);
+                        r = (e) => !e || `${e}` == `${n}`;
                       return Array.isArray(t) ? t.some((e) => r(e)) : r(t);
                     })
                   : r;
@@ -49532,7 +49309,7 @@ function _toPrimitive(t, r) {
           const o = (e, t) => {
             if ("string" == typeof e[t]) return "all" === e[t] || e[t] === r[t];
             if (Array.isArray(e[t])) {
-              return e[t].map((e) => "".concat(e)).includes(r[t]);
+              return e[t].map((e) => `${e}`).includes(r[t]);
             }
             return !1;
           };
@@ -49816,11 +49593,6 @@ function _toPrimitive(t, r) {
         };
         class Uf {
           constructor() {
-            _defineProperty(this, "loop", () => {
-              this.subscribers.forEach((e) => {
-                e.callback(Nf() - e.startTime, e.duration);
-              });
-            });
             (this.shouldAnimate = !0),
               (this.subscribers = []),
               (this.timer = null),
@@ -49832,6 +49604,11 @@ function _toPrimitive(t, r) {
           resumeAnimation() {
             this.shouldAnimate = !0;
           }
+          loop = () => {
+            this.subscribers.forEach((e) => {
+              e.callback(Nf() - e.startTime, e.duration);
+            });
+          };
           start() {
             this.timer || (this.timer = zf(this.loop));
           }
@@ -49860,6 +49637,10 @@ function _toPrimitive(t, r) {
         Hf.displayName = "TimerContext";
         var Vf = Hf;
         class Wf extends y.Component {
+          static displayName = "VictorySharedEvents";
+          static role = "shared-event-wrapper";
+          static contextType = Vf;
+          static defaultProps = { groupComponent: y.createElement("g", null) };
           constructor(e) {
             super(e),
               (this.getScopedEvents = nf.bind(this)),
@@ -50004,7 +49785,7 @@ function _toPrimitive(t, r) {
                           a,
                           Object.assign(
                             {
-                              key: "events-".concat(o),
+                              key: `events-${o}`,
                               sharedEvents: l,
                               eventKey: r,
                               name: o,
@@ -50062,12 +49843,6 @@ function _toPrimitive(t, r) {
                 });
           }
         }
-        _defineProperty(Wf, "displayName", "VictorySharedEvents");
-        _defineProperty(Wf, "role", "shared-event-wrapper");
-        _defineProperty(Wf, "contextType", Vf);
-        _defineProperty(Wf, "defaultProps", {
-          groupComponent: y.createElement("g", null),
-        });
         function $f() {
           return (
             ($f = Object.assign
@@ -50085,14 +49860,10 @@ function _toPrimitive(t, r) {
           );
         }
         const Gf = (0, y.forwardRef)((e, t) => {
-            var _Sn3;
             const { desc: n, id: r, tabIndex: o, origin: i, ...a } = e,
               s = {
                 vectorEffect: "non-scaling-stroke",
-                id:
-                  (_Sn3 = Sn(r, e)) === null || _Sn3 === void 0
-                    ? void 0
-                    : _Sn3.toString(),
+                id: Sn(r, e)?.toString(),
                 tabIndex: Sn(o, e),
                 ...a,
               };
@@ -50146,7 +49917,6 @@ function _toPrimitive(t, r) {
         }
         const Xf = { groupComponent: y.createElement("g", null) },
           Qf = (e) => {
-            var _a$key;
             const t = { ...Xf, ...e },
               [n] = (0, y.useState)(Un()()),
               r = Kn();
@@ -50158,25 +49928,19 @@ function _toPrimitive(t, r) {
               a = (o && o.props) || {},
               s = a.groupComponent ? { groupComponent: i, standalone: !1 } : {},
               u = cn()(s, a, yn(t, ["children", "groupComponent"]), {
-                key:
-                  (_a$key = a.key) !== null && _a$key !== void 0 ? _a$key : n,
+                key: a.key ?? n,
               }),
               c = o && y.cloneElement(o, u);
             return (
               y.useEffect(() => {
-                r === null || r === void 0 || r.addChild(n, c);
+                r?.addChild(n, c);
               }, [t.children]),
-              y.useEffect(
-                () => () =>
-                  r === null || r === void 0 ? void 0 : r.removeChild(n),
-                []
-              ),
+              y.useEffect(() => () => r?.removeChild(n), []),
               r ? null : c
             );
           };
         Qf.role = "portal";
         const Jf = (e) => {
-            var _Sn4;
             const {
                 children: t,
                 desc: n,
@@ -50186,14 +49950,7 @@ function _toPrimitive(t, r) {
                 title: a,
                 ...s
               } = e,
-              u = {
-                id:
-                  (_Sn4 = Sn(r, e)) === null || _Sn4 === void 0
-                    ? void 0
-                    : _Sn4.toString(),
-                tabIndex: Sn(i, e),
-                ...s,
-              };
+              u = { id: Sn(r, e)?.toString(), tabIndex: Sn(i, e), ...s };
             return y.createElement(
               "text",
               u,
@@ -50203,16 +49960,8 @@ function _toPrimitive(t, r) {
             );
           },
           ed = (e) => {
-            var _Sn5;
             const { desc: t, id: n, tabIndex: r, origin: o, ...i } = e,
-              a = {
-                id:
-                  (_Sn5 = Sn(n, e)) === null || _Sn5 === void 0
-                    ? void 0
-                    : _Sn5.toString(),
-                tabIndex: Sn(r, e),
-                ...i,
-              };
+              a = { id: Sn(n, e)?.toString(), tabIndex: Sn(r, e), ...i };
             return y.createElement("tspan", a);
           };
         function td(e, t) {
@@ -50392,7 +50141,7 @@ function _toPrimitive(t, r) {
           for (const t in e)
             if (e.hasOwnProperty(t)) {
               const n = e[t];
-              o.push("".concat(t, "(").concat(n, ")"));
+              o.push(`${t}(${n})`);
             }
           return o.join(" ").trim();
         };
@@ -51024,12 +50773,7 @@ function _toPrimitive(t, r) {
             return Math.abs(Math.cos(r) * e) + Math.abs(Math.sin(r) * t);
           },
           wd = (e, t) => {
-            var _e$match;
-            const n =
-                (_e$match = e.match(/[a-zA-Z%]+/)) === null ||
-                _e$match === void 0
-                  ? void 0
-                  : _e$match[0],
+            const n = e.match(/[a-zA-Z%]+/)?.[0],
               r = Number(e.match(/[0-9.,]+/));
             let o;
             return (
@@ -51128,22 +50872,12 @@ function _toPrimitive(t, r) {
           }),
           Ad = (e) =>
             e
-              ? ""
-                  .concat(e.angle, ":")
-                  .concat(e.fontFamily, ":")
-                  .concat(e.fontSize, ":")
-                  .concat(e.letterSpacing, ":")
-                  .concat(e.lineHeight)
+              ? `${e.angle}:${e.fontFamily}:${e.fontSize}:${e.letterSpacing}:${e.lineHeight}`
               : "null",
           Cd = dd()(
             (e, t) => {
-              var _d$cache$clear, _d$cache;
               let n = _d();
-              n.isConnected ||
-                ((_d$cache$clear = (_d$cache = _d.cache).clear) !== null &&
-                  _d$cache$clear !== void 0 &&
-                  _d$cache$clear.call(_d$cache),
-                (n = _d()));
+              n.isConnected || (_d.cache.clear?.(), (n = _d()));
               const r = bd(e);
               let o = 0;
               for (const [e, i] of r.entries()) {
@@ -51153,13 +50887,13 @@ function _toPrimitive(t, r) {
                   ),
                   a = Sd(t, e);
                 (r.style.fontFamily = a.fontFamily),
-                  (r.style.fontSize = "".concat(a.fontSize, "px")),
+                  (r.style.fontSize = `${a.fontSize}px`),
                   (r.style.lineHeight = a.lineHeight),
                   (r.style.fontFamily = a.fontFamily),
                   (r.style.letterSpacing = a.letterSpacing),
                   (r.textContent = i),
                   r.setAttribute("x", "0"),
-                  r.setAttribute("y", "".concat(o)),
+                  r.setAttribute("y", `${o}`),
                   n.appendChild(r),
                   (o += a.lineHeight * r.getBoundingClientRect().height);
               }
@@ -51167,21 +50901,15 @@ function _toPrimitive(t, r) {
               return (
                 (n.innerHTML = ""),
                 {
-                  width:
-                    t !== null && t !== void 0 && t.angle
-                      ? xd(i, o, t === null || t === void 0 ? void 0 : t.angle)
-                      : i,
-                  height:
-                    t !== null && t !== void 0 && t.angle
-                      ? xd(o, i, t === null || t === void 0 ? void 0 : t.angle)
-                      : o,
+                  width: t?.angle ? xd(i, o, t?.angle) : i,
+                  height: t?.angle ? xd(o, i, t?.angle) : o,
                 }
               );
             },
             (e, t) =>
-              ""
-                .concat(Array.isArray(e) ? e.join() : e, "::")
-                .concat(Array.isArray(t) ? t.map(Ad).join() : Ad(t))
+              `${Array.isArray(e) ? e.join() : e}::${
+                Array.isArray(t) ? t.map(Ad).join() : Ad(t)
+              }`
           ),
           Od = function (e, t, n) {
             void 0 === n && (n = !1);
@@ -51317,7 +51045,7 @@ function _toPrimitive(t, r) {
                         : r,
                       v = u ? Rd(e, p) - d.top : f,
                       g = {
-                        key: "tspan-background-".concat(n),
+                        key: `tspan-background-${n}`,
                         height: p,
                         style: Ld(i, n),
                         width: t.widthWithPadding,
@@ -51401,7 +51129,7 @@ function _toPrimitive(t, r) {
                 return null != n
                   ? Array.isArray(n)
                     ? n
-                    : "".concat(n).split("\n")
+                    : `${n}`.split("\n")
                   : void 0;
               })(e.text, e),
               n = ((e, t) => {
@@ -51524,7 +51252,7 @@ function _toPrimitive(t, r) {
               } = n,
               u = r.map((e, t) => {
                 const n = Ld(o, t),
-                  r = wd("".concat(i, "em"), n.fontSize),
+                  r = wd(`${i}em`, n.fontSize),
                   u = Ld(s, t);
                 return {
                   style: n,
@@ -51577,7 +51305,7 @@ function _toPrimitive(t, r) {
                   k = u.map((n, o) => {
                     const i = t[o].style,
                       a = {
-                        key: "".concat(g, "-key-").concat(o),
+                        key: `${g}-key-${o}`,
                         x: r ? void 0 : p,
                         dx: r ? l + t[o].backgroundPadding.left : l,
                         dy: zd(t, e, o),
@@ -51870,11 +51598,7 @@ function _toPrimitive(t, r) {
               f = y.useRef(Array.isArray(i) ? i.slice(1) : []),
               d = y.useRef(null),
               p = y.useRef(void 0),
-              h =
-                o[
-                  ((v = n),
-                  "ease".concat(v.charAt(0).toUpperCase() + v.slice(1)))
-                ];
+              h = o[((v = n), `ease${v.charAt(0).toUpperCase() + v.slice(1)}`)];
             var v;
             y.useEffect(
               () => (
@@ -51951,6 +51675,8 @@ function _toPrimitive(t, r) {
           );
         }
         class Bp extends y.Component {
+          static displayName = "VictoryTransition";
+          static contextType = Vf;
           constructor(e, t) {
             super(e, t),
               (this.state = { nodesShouldLoad: !1, nodesDoneLoad: !1 });
@@ -52026,11 +51752,7 @@ function _toPrimitive(t, r) {
             );
           }
           pickDomainProps(e) {
-            var _e$animate;
-            const t =
-              (_e$animate = e.animate) === null || _e$animate === void 0
-                ? void 0
-                : _e$animate.parentState;
+            const t = e.animate?.parentState;
             return t && t.nodesWillExit
               ? ((this.continuous || t.continuous) &&
                   (t.nextProps || this.state.nextProps)) ||
@@ -52052,14 +51774,10 @@ function _toPrimitive(t, r) {
                 })();
           }
           render() {
-            var _this$props$animate;
             const e = this.pickProps(),
-              t =
-                (_this$props$animate = this.props.animate) !== null &&
-                _this$props$animate !== void 0 &&
-                _this$props$animate.getTransitions
-                  ? this.props.animate.getTransitions
-                  : ko(e, this.state, (e) => this.setState(e)),
+              t = this.props.animate?.getTransitions
+                ? this.props.animate.getTransitions
+                : ko(e, this.state, (e) => this.setState(e)),
               n = y.Children.toArray(e.children)[0],
               r = t(n);
             this.transitionProps = r;
@@ -52094,8 +51812,6 @@ function _toPrimitive(t, r) {
             });
           }
         }
-        _defineProperty(Bp, "displayName", "VictoryTransition");
-        _defineProperty(Bp, "contextType", Vf);
         const qp = (e) => !Tn(e._x) && !Tn(e._y),
           Up = [
             { name: "parent", index: "parent" },
@@ -52105,29 +51821,19 @@ function _toPrimitive(t, r) {
         function Hp(e, t) {
           void 0 === t && (t = {});
           return class extends e {
-            constructor(_e2) {
-              super(_e2),
-                _defineProperty(this, "state", {}),
-                _defineProperty(this, "getEventState", of.bind(this)),
-                _defineProperty(this, "getScopedEvents", nf.bind(this)),
-                _defineProperty(this, "getEvents", (e, t, n) =>
-                  tf.call(this, e, t, n, this.getScopedEvents)
-                ),
-                _defineProperty(
-                  this,
-                  "externalMutations",
-                  this.getExternalMutations(this.props)
-                ),
-                _defineProperty(
-                  this,
-                  "calculatedState",
-                  this.getStateChanges(this.props)
-                ),
-                _defineProperty(this, "globalEvents", {}),
-                _defineProperty(this, "prevGlobalEventKeys", []),
-                _defineProperty(this, "boundGlobalEvents", {}),
-                this.cacheValues(this.getCalculatedValues(_e2));
+            constructor(e) {
+              super(e), this.cacheValues(this.getCalculatedValues(e));
             }
+            state = {};
+            getEventState = of.bind(this);
+            getScopedEvents = nf.bind(this);
+            getEvents = (e, t, n) =>
+              tf.call(this, e, t, n, this.getScopedEvents);
+            externalMutations = this.getExternalMutations(this.props);
+            calculatedState = this.getStateChanges(this.props);
+            globalEvents = {};
+            prevGlobalEventKeys = [];
+            boundGlobalEvents = {};
             shouldComponentUpdate(e) {
               const t = this.getExternalMutations(e),
                 n = this.props.animating || this.props.animate,
@@ -52258,7 +51964,7 @@ function _toPrimitive(t, r) {
             getComponentProps(t, n, r) {
               const o = this.props.name || e.role,
                 i = (this.dataKeys && this.dataKeys[r]) || r,
-                a = "".concat(o, "-").concat(n, "-").concat(i),
+                a = `${o}-${n}-${i}`,
                 s =
                   (this.baseProps[i] && this.baseProps[i][n]) ||
                   this.baseProps[i];
@@ -52293,13 +51999,9 @@ function _toPrimitive(t, r) {
               );
             }
             animateComponent(e, t) {
-              var _e$animate2;
               const n =
                   ("object" == typeof e.animate &&
-                    ((_e$animate2 = e.animate) === null ||
-                    _e$animate2 === void 0
-                      ? void 0
-                      : _e$animate2.animationWhitelist)) ||
+                    e.animate?.animationWhitelist) ||
                   t,
                 r = this.constructor;
               return y.createElement(
@@ -52783,7 +52485,6 @@ function _toPrimitive(t, r) {
                 scale: n.scale && n.scale[h] ? { [h]: n.scale[h] } : void 0,
               };
             return c.reduce((e, t, n) => {
-              var _u$o, _u$o2, _u$o3;
               const r = p ? p[n] : t,
                 d = l(t, n, c),
                 h = ((e, t) => ({
@@ -52799,29 +52500,12 @@ function _toPrimitive(t, r) {
                     text: d,
                   })
                 ),
-                v = {
-                  position: Jp(h, a, s),
-                  transform: eh(
-                    (_u$o = u[o]) === null || _u$o === void 0
-                      ? void 0
-                      : _u$o.call(u, t),
-                    S,
-                    s
-                  ),
-                },
+                v = { position: Jp(h, a, s), transform: eh(u[o]?.(t), S, s) },
                 g = {
                   edge: E,
                   transform: {
-                    x: s
-                      ? -k.x + S.x
-                      : ((_u$o2 = u[o]) === null || _u$o2 === void 0
-                          ? void 0
-                          : _u$o2.call(u, t)) + S.x,
-                    y: s
-                      ? ((_u$o3 = u[o]) === null || _u$o3 === void 0
-                          ? void 0
-                          : _u$o3.call(u, t)) + S.y
-                      : k.y + S.y,
+                    x: s ? -k.x + S.x : u[o]?.(t) + S.x,
+                    y: s ? u[o]?.(t) + S.y : k.y + S.y,
                   },
                 };
               return (
@@ -52842,12 +52526,53 @@ function _toPrimitive(t, r) {
           },
           ah = { width: 450, height: 300, padding: 50 };
         class sh extends y.Component {
+          static animationWhitelist = [
+            "style",
+            "domain",
+            "range",
+            "tickCount",
+            "tickValues",
+            "offsetX",
+            "offsetY",
+            "padding",
+            "width",
+            "height",
+          ];
+          static displayName = "VictoryAxis";
+          static role = "axis";
+          static defaultTransitions = {
+            onExit: { duration: 500 },
+            onEnter: { duration: 500 },
+          };
+          static defaultProps = {
+            axisComponent: y.createElement(Kf, null),
+            axisLabelComponent: y.createElement(Ud, null),
+            tickLabelComponent: y.createElement(Ud, null),
+            tickComponent: y.createElement(Kf, null),
+            gridComponent: y.createElement(Kf, null),
+            standalone: !0,
+            theme: so.grayscale,
+            containerComponent: y.createElement(er, null),
+            groupComponent: y.createElement("g", { role: "presentation" }),
+            fixLabelOverlap: !1,
+          };
+          static getDomain = Kl;
+          static getAxis = Nl;
           static getStyles(e) {
             return $p(e);
           }
           static getBaseProps(e) {
             return ih(e, ah);
           }
+          static expectedComponents = [
+            "axisComponent",
+            "axisLabelComponent",
+            "groupComponent",
+            "containerComponent",
+            "tickComponent",
+            "tickLabelComponent",
+            "gridComponent",
+          ];
           renderLine(e) {
             const { axisComponent: t } = e,
               n = this.getComponentProps(t, "axis", 0);
@@ -52886,7 +52611,7 @@ function _toPrimitive(t, r) {
                 v = [p, l, y.cloneElement(n, h)].filter(Boolean);
               return y.cloneElement(
                 e.groupComponent,
-                { key: "".concat(o, "-tick-group-").concat(a) },
+                { key: `${o}-tick-group-${a}` },
                 v
               );
             });
@@ -52948,47 +52673,6 @@ function _toPrimitive(t, r) {
               : y.cloneElement(t.groupComponent, n, i);
           }
         }
-        _defineProperty(sh, "animationWhitelist", [
-          "style",
-          "domain",
-          "range",
-          "tickCount",
-          "tickValues",
-          "offsetX",
-          "offsetY",
-          "padding",
-          "width",
-          "height",
-        ]);
-        _defineProperty(sh, "displayName", "VictoryAxis");
-        _defineProperty(sh, "role", "axis");
-        _defineProperty(sh, "defaultTransitions", {
-          onExit: { duration: 500 },
-          onEnter: { duration: 500 },
-        });
-        _defineProperty(sh, "defaultProps", {
-          axisComponent: y.createElement(Kf, null),
-          axisLabelComponent: y.createElement(Ud, null),
-          tickLabelComponent: y.createElement(Ud, null),
-          tickComponent: y.createElement(Kf, null),
-          gridComponent: y.createElement(Kf, null),
-          standalone: !0,
-          theme: so.grayscale,
-          containerComponent: y.createElement(er, null),
-          groupComponent: y.createElement("g", { role: "presentation" }),
-          fixLabelOverlap: !1,
-        });
-        _defineProperty(sh, "getDomain", Kl);
-        _defineProperty(sh, "getAxis", Nl);
-        _defineProperty(sh, "expectedComponents", [
-          "axisComponent",
-          "axisLabelComponent",
-          "groupComponent",
-          "containerComponent",
-          "tickComponent",
-          "tickLabelComponent",
-          "gridComponent",
-        ]);
         const uh = Hp(sh, {
           components: [
             { name: "axis", index: 0 },
@@ -53016,16 +52700,8 @@ function _toPrimitive(t, r) {
           );
         }
         const lh = (0, y.forwardRef)((e, t) => {
-            var _Sn6;
             const { desc: n, id: r, tabIndex: o, origin: i, ...a } = e,
-              s = {
-                id:
-                  (_Sn6 = Sn(r, e)) === null || _Sn6 === void 0
-                    ? void 0
-                    : _Sn6.toString(),
-                tabIndex: Sn(o, e),
-                ...a,
-              };
+              s = { id: Sn(r, e)?.toString(), tabIndex: Sn(o, e), ...a };
             return n
               ? y.createElement(
                   "path",
@@ -53046,32 +52722,15 @@ function _toPrimitive(t, r) {
               s = Math.abs(i - o) / 2 + o,
               u = t + r * Math.cos(En(o)),
               c = n - r * Math.sin(En(o));
-            return ""
-              .concat(
-                a
-                  ? " M "
-                      .concat(t, ", ")
-                      .concat(n, " L ")
-                      .concat(u, ", ")
-                      .concat(c)
-                  : "M ".concat(u, ", ").concat(c),
-                " ",
-                "A "
-                  .concat(r, ", ")
-                  .concat(r, ", 0, ")
-                  .concat(s - o <= 180 ? 0 : 1, ", 0, ")
-                  .concat(t + r * Math.cos(En(s)), ", ")
-                  .concat(n - r * Math.sin(En(s))),
-                " ",
-                "A "
-                  .concat(r, ", ")
-                  .concat(r, ", 0, ")
-                  .concat(i - s <= 180 ? 0 : 1, ", 0, ")
-                  .concat(t + r * Math.cos(En(i)), ", ")
-                  .concat(n - r * Math.sin(En(i))),
-                " "
-              )
-              .concat(a ? "Z" : "");
+            return `${
+              a ? ` M ${t}, ${n} L ${u}, ${c}` : `M ${u}, ${c}`
+            } ${`A ${r}, ${r}, 0, ${s - o <= 180 ? 0 : 1}, 0, ${
+              t + r * Math.cos(En(s))
+            }, ${n - r * Math.sin(En(s))}`} ${`A ${r}, ${r}, 0, ${
+              i - s <= 180 ? 0 : 1
+            }, 0, ${t + r * Math.cos(En(i))}, ${n - r * Math.sin(En(i))}`} ${
+              a ? "Z" : ""
+            }`;
           },
           dh = {
             pathComponent: y.createElement(lh, null),
@@ -53241,10 +52900,9 @@ function _toPrimitive(t, r) {
                 axisType: o,
               }),
               { tickLabelComponent: v } = e,
-              g =
-                v !== null && v !== void 0 && v.props.labelPlacement
-                  ? v.props.labelPlacement
-                  : e.labelPlacement,
+              g = v?.props.labelPlacement
+                ? v.props.labelPlacement
+                : e.labelPlacement,
               y = h.padding || 0,
               m = "radial" === o ? wh(e) : void 0,
               b = "angular" === o ? _n(u(n)) : m + 0,
@@ -53315,26 +52973,14 @@ function _toPrimitive(t, r) {
           },
           _h = (e) => {
             const t = Object.assign({ polar: !0 }, e),
-              n = ((e, _t$o, _t$i) => {
+              n = ((e) => {
                 const { theme: t = {}, dependentAxis: n } = e,
                   r =
                     (t.polarAxis && t.polarAxis.style) ||
                     (t.axis && t.axis.style),
                   o = n ? "polarDependentAxis" : "polarIndependentAxis",
                   i = n ? "dependentAxis" : "independentAxis",
-                  a =
-                    (t === null ||
-                    t === void 0 ||
-                    (_t$o = t[o]) === null ||
-                    _t$o === void 0
-                      ? void 0
-                      : _t$o.style) ||
-                    (t === null ||
-                    t === void 0 ||
-                    (_t$i = t[i]) === null ||
-                    _t$i === void 0
-                      ? void 0
-                      : _t$i.style);
+                  a = t?.[o]?.style || t?.[i]?.style;
                 return r && a
                   ? [
                       "axis",
@@ -53344,14 +52990,7 @@ function _toPrimitive(t, r) {
                       "tickLabels",
                       "ticks",
                     ].reduce(
-                      (e, t) => (
-                        (e[t] = cn()(
-                          {},
-                          a === null || a === void 0 ? void 0 : a[t],
-                          r === null || r === void 0 ? void 0 : r[t]
-                        )),
-                        e
-                      ),
+                      (e, t) => ((e[t] = cn()({}, a?.[t], r?.[t])), e),
                       {}
                     )
                   : a || r;
@@ -53414,10 +53053,9 @@ function _toPrimitive(t, r) {
                 const { axisType: n, radius: r, style: o, origin: i } = t,
                   { axisLabelComponent: a } = e;
                 if ("radial" !== n) return {};
-                const s =
-                    a !== null && a !== void 0 && a.props.labelPlacement
-                      ? a.props.labelPlacement
-                      : e.labelPlacement,
+                const s = a?.props.labelPlacement
+                    ? a.props.labelPlacement
+                    : e.labelPlacement,
                   u = (o && o.axisLabel) || {},
                   c = "radial" === n ? wh(e) : void 0,
                   l =
@@ -53468,6 +53106,40 @@ function _toPrimitive(t, r) {
           },
           Ch = { width: 450, height: 300, padding: 50 };
         class Oh extends y.Component {
+          static animationWhitelist = [
+            "style",
+            "domain",
+            "range",
+            "tickCount",
+            "tickValues",
+            "padding",
+            "width",
+            "height",
+          ];
+          static displayName = "VictoryAxis";
+          static role = "axis";
+          static defaultTransitions = {
+            onExit: { duration: 500 },
+            onEnter: { duration: 500 },
+          };
+          static defaultProps = {
+            axisComponent: y.createElement(Kf, null),
+            axisLabelComponent: y.createElement(Ud, null),
+            circularAxisComponent: y.createElement(ph, null),
+            circularGridComponent: y.createElement(ph, null),
+            containerComponent: y.createElement(er, null),
+            endAngle: 360,
+            gridComponent: y.createElement(Kf, null),
+            groupComponent: y.createElement("g", { role: "presentation" }),
+            labelPlacement: "parallel",
+            startAngle: 0,
+            standalone: !0,
+            theme: so.grayscale,
+            tickComponent: y.createElement(Kf, null),
+            tickLabelComponent: y.createElement(Ud, null),
+          };
+          static getDomain = Kl;
+          static getAxis = Nl;
           static getScale(e) {
             return bh(e);
           }
@@ -53477,6 +53149,16 @@ function _toPrimitive(t, r) {
           static getBaseProps(e) {
             return Ah(e, Ch);
           }
+          static expectedComponents = [
+            "axisComponent",
+            "circularAxisComponent",
+            "groupComponent",
+            "containerComponent",
+            "tickComponent",
+            "tickLabelComponent",
+            "gridComponent",
+            "circularGridComponent",
+          ];
           renderAxisLine(e) {
             const { dependentAxis: t } = e,
               n = t ? e.axisComponent : e.circularAxisComponent,
@@ -53507,7 +53189,7 @@ function _toPrimitive(t, r) {
               a = this.dataKeys
                 .map((e, n) => {
                   const i = Object.assign(
-                      { key: "".concat(r, "-tick-").concat(e) },
+                      { key: `${r}-tick-${e}` },
                       this.getComponentProps(t, "ticks", n)
                     ),
                     a = y.cloneElement(t, i);
@@ -53517,7 +53199,7 @@ function _toPrimitive(t, r) {
               s = this.dataKeys
                 .map((e, t) => {
                   const n = Object.assign(
-                      { key: "".concat(r, "-grid-").concat(e) },
+                      { key: `${r}-grid-${e}` },
                       this.getComponentProps(i, "grid", t)
                     ),
                     a = y.cloneElement(i, n);
@@ -53526,7 +53208,7 @@ function _toPrimitive(t, r) {
                 .filter(Boolean),
               u = this.dataKeys.map((e, t) => {
                 const o = Object.assign(
-                  { key: "".concat(r, "-tick-").concat(e) },
+                  { key: `${r}-tick-${e}` },
                   this.getComponentProps(n, "tickLabels", t)
                 );
                 return y.cloneElement(n, o);
@@ -53557,50 +53239,6 @@ function _toPrimitive(t, r) {
               : n;
           }
         }
-        _defineProperty(Oh, "animationWhitelist", [
-          "style",
-          "domain",
-          "range",
-          "tickCount",
-          "tickValues",
-          "padding",
-          "width",
-          "height",
-        ]);
-        _defineProperty(Oh, "displayName", "VictoryAxis");
-        _defineProperty(Oh, "role", "axis");
-        _defineProperty(Oh, "defaultTransitions", {
-          onExit: { duration: 500 },
-          onEnter: { duration: 500 },
-        });
-        _defineProperty(Oh, "defaultProps", {
-          axisComponent: y.createElement(Kf, null),
-          axisLabelComponent: y.createElement(Ud, null),
-          circularAxisComponent: y.createElement(ph, null),
-          circularGridComponent: y.createElement(ph, null),
-          containerComponent: y.createElement(er, null),
-          endAngle: 360,
-          gridComponent: y.createElement(Kf, null),
-          groupComponent: y.createElement("g", { role: "presentation" }),
-          labelPlacement: "parallel",
-          startAngle: 0,
-          standalone: !0,
-          theme: so.grayscale,
-          tickComponent: y.createElement(Kf, null),
-          tickLabelComponent: y.createElement(Ud, null),
-        });
-        _defineProperty(Oh, "getDomain", Kl);
-        _defineProperty(Oh, "getAxis", Nl);
-        _defineProperty(Oh, "expectedComponents", [
-          "axisComponent",
-          "circularAxisComponent",
-          "groupComponent",
-          "containerComponent",
-          "tickComponent",
-          "tickLabelComponent",
-          "gridComponent",
-          "circularGridComponent",
-        ]);
         const Th = Hp(Oh, {
             components: [
               { name: "axis", index: 0 },
@@ -53710,7 +53348,7 @@ function _toPrimitive(t, r) {
                   horizontal: c,
                 };
               })(t, e, o),
-              v = t.props.name || "".concat(d, "-").concat(r, "-").concat(n),
+              v = t.props.name || `${d}-${r}-${n}`,
               g = cn()(
                 {
                   horizontal: f,
@@ -53722,7 +53360,7 @@ function _toPrimitive(t, r) {
                   name: v,
                   origin: s ? l : void 0,
                   padding: o.padding,
-                  key: "".concat(v, "-key-").concat(n),
+                  key: `${v}-key-${n}`,
                   standalone: !1,
                 },
                 h
@@ -53798,8 +53436,7 @@ function _toPrimitive(t, r) {
                   ),
                   o = y.useCallback(
                     (e, n, o) => {
-                      if (!(e !== null && e !== void 0 && e.animate))
-                        return n.props.animate;
+                      if (!e?.animate) return n.props.animate;
                       let i = e.animate && e.animate.getTransitions;
                       const a = (() => {
                           let e = t && t.childrenTransitions;
@@ -53823,7 +53460,7 @@ function _toPrimitive(t, r) {
                   ),
                   i = y.useCallback(
                     (e, t) => {
-                      if (e !== null && e !== void 0 && e.animate)
+                      if (e?.animate)
                         if (e.animate.parentState) {
                           const n = e.animate.parentState.nodesWillExit
                               ? e
@@ -53842,19 +53479,11 @@ function _toPrimitive(t, r) {
                             },
                             a =
                               !e.polar &&
-                              n.some((e) => {
-                                var _e$props;
-                                return (
+                              n.some(
+                                (e) =>
                                   i(e) ||
-                                  ((e === null ||
-                                  e === void 0 ||
-                                  (_e$props = e.props) === null ||
-                                  _e$props === void 0
-                                    ? void 0
-                                    : _e$props.children) &&
-                                    i(e.props.children))
-                                );
-                              }),
+                                  (e?.props?.children && i(e.props.children))
+                              ),
                             {
                               nodesWillExit: s,
                               nodesWillEnter: u,
@@ -53932,7 +53561,7 @@ function _toPrimitive(t, r) {
                         style: e.style.background,
                         x: s,
                         y: u,
-                        key: "".concat(c, "-background"),
+                        key: `${c}-background`,
                         width: o,
                       };
                     return y.cloneElement(n, cn()({}, n.props, l));
@@ -54302,29 +53931,27 @@ function _toPrimitive(t, r) {
               trailing: !1,
             }),
           },
-          Xh = (e) => {
-            var _e$clipId;
-            return y.createElement(
+          Xh = (e) =>
+            y.createElement(
               "defs",
               null,
               y.createElement(
                 "clipPath",
-                {
-                  id:
-                    (_e$clipId = e.clipId) === null || _e$clipId === void 0
-                      ? void 0
-                      : _e$clipId.toString(),
-                },
+                { id: e.clipId?.toString() },
                 e.children
               )
             );
-          };
         class Qh extends y.Component {
+          static displayName = "VictoryClipContainer";
+          static role = "container";
+          static defaultProps = {
+            circleComponent: y.createElement(zn, null),
+            rectComponent: y.createElement(Rn, null),
+            clipPathComponent: y.createElement(Xh, null),
+            groupComponent: y.createElement("g", null),
+          };
           constructor(e) {
-            super(e),
-              (this.state = {
-                clipId: e === null || e === void 0 ? void 0 : e.clipId,
-              });
+            super(e), (this.state = { clipId: e?.clipId });
           }
           componentDidMount() {
             this.state.clipId ||
@@ -54365,8 +53992,8 @@ function _toPrimitive(t, r) {
                   className: s,
                   style: r,
                   transform: i,
-                  key: "clipped-group-".concat(t),
-                  clipPath: "url(#".concat(t, ")"),
+                  key: `clipped-group-${t}`,
+                  clipPath: `url(#${t})`,
                 },
                 o
               );
@@ -54433,7 +54060,7 @@ function _toPrimitive(t, r) {
             }
             return y.cloneElement(
               l,
-              Object.assign({ key: "clip-path-".concat(t) }, e, { clipId: t }),
+              Object.assign({ key: `clip-path-${t}` }, e, { clipId: t }),
               v
             );
           }
@@ -54465,14 +54092,6 @@ function _toPrimitive(t, r) {
             return this.renderClippedGroup(o, this.state.clipId);
           }
         }
-        _defineProperty(Qh, "displayName", "VictoryClipContainer");
-        _defineProperty(Qh, "role", "container");
-        _defineProperty(Qh, "defaultProps", {
-          circleComponent: y.createElement(zn, null),
-          rectComponent: y.createElement(Rn, null),
-          clipPathComponent: y.createElement(Xh, null),
-          groupComponent: y.createElement("g", null),
-        });
         const Jh = {
             clipContainerComponent: y.createElement(Qh, null),
             allowPan: !0,
@@ -54711,8 +54330,7 @@ function _toPrimitive(t, r) {
                   ? dv
                   : (function (e) {
                       let t = Math.floor(e);
-                      if (!(t >= 0))
-                        throw new Error("invalid digits: ".concat(e));
+                      if (!(t >= 0)) throw new Error(`invalid digits: ${e}`);
                       if (t > 15) return dv;
                       const n = 10 ** t;
                       return function (e) {
@@ -54723,69 +54341,26 @@ function _toPrimitive(t, r) {
                     })(e));
           }
           moveTo(e, t) {
-            this._append(
-              _templateObject ||
-                (_templateObject = _taggedTemplateLiteral(["M", ",", ""])),
-              (this._x0 = this._x1 = +e),
-              (this._y0 = this._y1 = +t)
-            );
+            this._append`M${(this._x0 = this._x1 = +e)},${(this._y0 = this._y1 =
+              +t)}`;
           }
           closePath() {
             null !== this._x1 &&
-              ((this._x1 = this._x0),
-              (this._y1 = this._y0),
-              this._append(
-                _templateObject2 ||
-                  (_templateObject2 = _taggedTemplateLiteral(["Z"]))
-              ));
+              ((this._x1 = this._x0), (this._y1 = this._y0), this._append`Z`);
           }
           lineTo(e, t) {
-            this._append(
-              _templateObject3 ||
-                (_templateObject3 = _taggedTemplateLiteral(["L", ",", ""])),
-              (this._x1 = +e),
-              (this._y1 = +t)
-            );
+            this._append`L${(this._x1 = +e)},${(this._y1 = +t)}`;
           }
           quadraticCurveTo(e, t, n, r) {
-            this._append(
-              _templateObject4 ||
-                (_templateObject4 = _taggedTemplateLiteral([
-                  "Q",
-                  ",",
-                  ",",
-                  ",",
-                  "",
-                ])),
-              +e,
-              +t,
-              (this._x1 = +n),
-              (this._y1 = +r)
-            );
+            this._append`Q${+e},${+t},${(this._x1 = +n)},${(this._y1 = +r)}`;
           }
           bezierCurveTo(e, t, n, r, o, i) {
-            this._append(
-              _templateObject5 ||
-                (_templateObject5 = _taggedTemplateLiteral([
-                  "C",
-                  ",",
-                  ",",
-                  ",",
-                  ",",
-                  ",",
-                  "",
-                ])),
-              +e,
-              +t,
-              +n,
-              +r,
-              (this._x1 = +o),
-              (this._y1 = +i)
-            );
+            this._append`C${+e},${+t},${+n},${+r},${(this._x1 =
+              +o)},${(this._y1 = +i)}`;
           }
           arcTo(e, t, n, r, o) {
             if (((e = +e), (t = +t), (n = +n), (r = +r), (o = +o) < 0))
-              throw new Error("negative radius: ".concat(o));
+              throw new Error(`negative radius: ${o}`);
             let i = this._x1,
               a = this._y1,
               s = n - e,
@@ -54794,13 +54369,8 @@ function _toPrimitive(t, r) {
               l = a - t,
               f = c * c + l * l;
             if (null === this._x1)
-              this._append(
-                _templateObject6 ||
-                  (_templateObject6 = _taggedTemplateLiteral(["M", ",", ""])),
-                (this._x1 = e),
-                (this._y1 = t)
-              );
-            else if (f > lv) {
+              this._append`M${(this._x1 = e)},${(this._y1 = t)}`;
+            else if (f > lv)
               if (Math.abs(l * s - u * c) > lv && o) {
                 let d = n - i,
                   p = r - a,
@@ -54814,44 +54384,15 @@ function _toPrimitive(t, r) {
                   b = m / y,
                   x = m / g;
                 Math.abs(b - 1) > lv &&
-                  this._append(
-                    _templateObject7 ||
-                      (_templateObject7 = _taggedTemplateLiteral([
-                        "L",
-                        ",",
-                        "",
-                      ])),
-                    e + b * c,
-                    t + b * l
-                  ),
-                  this._append(
-                    _templateObject8 ||
-                      (_templateObject8 = _taggedTemplateLiteral([
-                        "A",
-                        ",",
-                        ",0,0,",
-                        ",",
-                        ",",
-                        "",
-                      ])),
-                    o,
-                    o,
-                    +(l * d > c * p),
-                    (this._x1 = e + x * s),
-                    (this._y1 = t + x * u)
-                  );
-              } else
-                this._append(
-                  _templateObject9 ||
-                    (_templateObject9 = _taggedTemplateLiteral(["L", ",", ""])),
-                  (this._x1 = e),
-                  (this._y1 = t)
-                );
-            } else;
+                  this._append`L${e + b * c},${t + b * l}`,
+                  this._append`A${o},${o},0,0,${+(l * d > c * p)},${(this._x1 =
+                    e + x * s)},${(this._y1 = t + x * u)}`;
+              } else this._append`L${(this._x1 = e)},${(this._y1 = t)}`;
+            else;
           }
           arc(e, t, n, r, o, i) {
             if (((e = +e), (t = +t), (i = !!i), (n = +n) < 0))
-              throw new Error("negative radius: ".concat(n));
+              throw new Error(`negative radius: ${n}`);
             let a = n * Math.cos(r),
               s = n * Math.sin(r),
               u = e + a,
@@ -54859,85 +54400,23 @@ function _toPrimitive(t, r) {
               l = 1 ^ i,
               f = i ? r - o : o - r;
             null === this._x1
-              ? this._append(
-                  _templateObject0 ||
-                    (_templateObject0 = _taggedTemplateLiteral(["M", ",", ""])),
-                  u,
-                  c
-                )
+              ? this._append`M${u},${c}`
               : (Math.abs(this._x1 - u) > lv || Math.abs(this._y1 - c) > lv) &&
-                this._append(
-                  _templateObject1 ||
-                    (_templateObject1 = _taggedTemplateLiteral(["L", ",", ""])),
-                  u,
-                  c
-                ),
+                this._append`L${u},${c}`,
               n &&
                 (f < 0 && (f = (f % cv) + cv),
                 f > fv
-                  ? this._append(
-                      _templateObject10 ||
-                        (_templateObject10 = _taggedTemplateLiteral([
-                          "A",
-                          ",",
-                          ",0,1,",
-                          ",",
-                          ",",
-                          "A",
-                          ",",
-                          ",0,1,",
-                          ",",
-                          ",",
-                          "",
-                        ])),
-                      n,
-                      n,
-                      l,
-                      e - a,
-                      t - s,
-                      n,
-                      n,
-                      l,
-                      (this._x1 = u),
-                      (this._y1 = c)
-                    )
+                  ? this._append`A${n},${n},0,1,${l},${e - a},${
+                      t - s
+                    }A${n},${n},0,1,${l},${(this._x1 = u)},${(this._y1 = c)}`
                   : f > lv &&
-                    this._append(
-                      _templateObject11 ||
-                        (_templateObject11 = _taggedTemplateLiteral([
-                          "A",
-                          ",",
-                          ",0,",
-                          ",",
-                          ",",
-                          ",",
-                          "",
-                        ])),
-                      n,
-                      n,
-                      +(f >= uv),
-                      l,
-                      (this._x1 = e + n * Math.cos(o)),
-                      (this._y1 = t + n * Math.sin(o))
-                    ));
+                    this._append`A${n},${n},0,${+(f >= uv)},${l},${(this._x1 =
+                      e + n * Math.cos(o))},${(this._y1 =
+                      t + n * Math.sin(o))}`);
           }
           rect(e, t, n, r) {
-            this._append(
-              _templateObject12 ||
-                (_templateObject12 = _taggedTemplateLiteral([
-                  "M",
-                  ",",
-                  "h",
-                  "v",
-                  "h",
-                  "Z",
-                ])),
-              (this._x0 = this._x1 = +e),
-              (this._y0 = this._y1 = +t),
-              (n = +n),
-              +r,
-              -n
-            );
+            this._append`M${(this._x0 = this._x1 = +e)},${(this._y0 = this._y1 =
+              +t)}h${(n = +n)}v${+r}h${-n}Z`;
           }
           toString() {
             return this._;
@@ -54951,8 +54430,7 @@ function _toPrimitive(t, r) {
               if (null == n) t = null;
               else {
                 const e = Math.floor(n);
-                if (!(e >= 0))
-                  throw new RangeError("invalid digits: ".concat(n));
+                if (!(e >= 0)) throw new RangeError(`invalid digits: ${n}`);
                 t = e;
               }
               return e;
@@ -55289,7 +54767,7 @@ function _toPrimitive(t, r) {
               y = v > h;
             if (
               (s || (s = c = u()), p < d && ((l = p), (p = d), (d = l)), p > Dv)
-            ) {
+            )
               if (g > Nv - Dv)
                 s.moveTo(p * Cv(h), p * jv(h)),
                   s.arc(0, 0, p, h, v, !y),
@@ -55447,7 +54925,7 @@ function _toPrimitive(t, r) {
                       : s.arc(0, 0, d, k, S, y)
                     : s.lineTo(N, R);
               }
-            } else s.moveTo(0, 0);
+            else s.moveTo(0, 0);
             if ((s.closePath(), c)) return (s = null), c + "" || null;
           }
           return (
@@ -57059,13 +56537,13 @@ function _toPrimitive(t, r) {
           zy = (e) => (t) => e.x(void 0 !== t._x1 ? t._x1 : t._x),
           Fy = (e) => (t) => e.y(void 0 !== t._y1 ? t._y1 : t._y),
           By = (e) =>
-            "curve".concat(((e) => e && e[0].toUpperCase() + e.slice(1))(e)),
+            `curve${((e) => e && e[0].toUpperCase() + e.slice(1))(e)}`,
           qy = (e) => {
             const { interpolation: t } = e;
             if ("function" == typeof t) return t;
             if ("string" == typeof t) {
               const { polar: n, openCurve: r = !n } = e,
-                o = r ? By(t) : ((e) => "".concat(By(e), "Closed"))(t);
+                o = r ? By(t) : ((e) => `${By(e)}Closed`)(t);
               return i[o];
             }
             return sv;
@@ -57158,10 +56636,7 @@ function _toPrimitive(t, r) {
                 tabIndex: g,
               } = t,
               m = Gn(t),
-              b =
-                a && s
-                  ? "translate(".concat(s.x, ", ").concat(s.y, ")")
-                  : void 0,
+              b = a && s ? `translate(${s.x}, ${s.y})` : void 0,
               x = t.transform || b,
               w = h.stroke && "none" !== h.stroke && "transparent" !== h.stroke,
               S = Gy(t),
@@ -57181,7 +56656,7 @@ function _toPrimitive(t, r) {
                 c,
                 Object.assign(
                   {
-                    key: "".concat(p, "-area"),
+                    key: `${p}-area`,
                     style: Object.assign({}, h, { stroke: E }),
                     d: S(u),
                     desc: v,
@@ -57196,7 +56671,7 @@ function _toPrimitive(t, r) {
                     c,
                     Object.assign(
                       {
-                        key: "".concat(p, "-area-stroke"),
+                        key: `${p}-area-stroke`,
                         style: Object.assign({}, h, { fill: "none" }),
                         d: k(u),
                       },
@@ -57213,6 +56688,57 @@ function _toPrimitive(t, r) {
           interpolation: "linear",
         };
         class Xy extends y.Component {
+          static animationWhitelist = [
+            "data",
+            "domain",
+            "height",
+            "padding",
+            "style",
+            "width",
+          ];
+          static defaultProps = {
+            containerComponent: y.createElement(er, null),
+            dataComponent: y.createElement(Ky, null),
+            groupComponent: y.createElement(Qh, null),
+            labelComponent: y.createElement(Ud, { renderInPortal: !0 }),
+            samples: 50,
+            sortKey: "x",
+            sortOrder: "ascending",
+            standalone: !0,
+            theme: so.grayscale,
+          };
+          static displayName = "VictoryArea";
+          static role = "area";
+          static continuous = !0;
+          static defaultTransitions = {
+            onLoad: { duration: 2e3 },
+            onExit: { duration: 500 },
+            onEnter: { duration: 500 },
+          };
+          static defaultPolarTransitions = {
+            onLoad: {
+              duration: 2e3,
+              before: () => ({ _y: 0, _y1: 0, _y0: 0 }),
+              after: (e) => ({ _y: e._y, _y1: e._y1, _y0: e._y0 }),
+            },
+            onExit: {
+              duration: 500,
+              before: (e, t, n) => {
+                const r = (e) => (0 === t ? n[t + 1] : n[t - 1])[e];
+                return { _x: r("_x"), _y: r("_y"), _y0: r("_y0") };
+              },
+            },
+            onEnter: {
+              duration: 500,
+              before: (e, t, n) => {
+                const r = (e) => (0 === t ? n[t + 1] : n[t - 1])[e];
+                return { _x: r("_x"), _y: r("_y"), _y0: r("_y0") };
+              },
+              after: (e) => ({ _x: e._x, _y: e._y, _y1: e._y1, _y0: e._y0 }),
+            },
+          };
+          static getDomain = Tl;
+          static getData = ml;
           static getBaseProps(e) {
             return ((e, t) => {
               const n = Dn(e, t, "area"),
@@ -57278,6 +56804,12 @@ function _toPrimitive(t, r) {
               );
             })(e, Zy);
           }
+          static expectedComponents = [
+            "dataComponent",
+            "labelComponent",
+            "groupComponent",
+            "containerComponent",
+          ];
           shouldAnimate() {
             return !!this.props.animate;
           }
@@ -57292,63 +56824,6 @@ function _toPrimitive(t, r) {
             );
           }
         }
-        _defineProperty(Xy, "animationWhitelist", [
-          "data",
-          "domain",
-          "height",
-          "padding",
-          "style",
-          "width",
-        ]);
-        _defineProperty(Xy, "defaultProps", {
-          containerComponent: y.createElement(er, null),
-          dataComponent: y.createElement(Ky, null),
-          groupComponent: y.createElement(Qh, null),
-          labelComponent: y.createElement(Ud, { renderInPortal: !0 }),
-          samples: 50,
-          sortKey: "x",
-          sortOrder: "ascending",
-          standalone: !0,
-          theme: so.grayscale,
-        });
-        _defineProperty(Xy, "displayName", "VictoryArea");
-        _defineProperty(Xy, "role", "area");
-        _defineProperty(Xy, "continuous", !0);
-        _defineProperty(Xy, "defaultTransitions", {
-          onLoad: { duration: 2e3 },
-          onExit: { duration: 500 },
-          onEnter: { duration: 500 },
-        });
-        _defineProperty(Xy, "defaultPolarTransitions", {
-          onLoad: {
-            duration: 2e3,
-            before: () => ({ _y: 0, _y1: 0, _y0: 0 }),
-            after: (e) => ({ _y: e._y, _y1: e._y1, _y0: e._y0 }),
-          },
-          onExit: {
-            duration: 500,
-            before: (e, t, n) => {
-              const r = (e) => (0 === t ? n[t + 1] : n[t - 1])[e];
-              return { _x: r("_x"), _y: r("_y"), _y0: r("_y0") };
-            },
-          },
-          onEnter: {
-            duration: 500,
-            before: (e, t, n) => {
-              const r = (e) => (0 === t ? n[t + 1] : n[t - 1])[e];
-              return { _x: r("_x"), _y: r("_y"), _y0: r("_y0") };
-            },
-            after: (e) => ({ _x: e._x, _y: e._y, _y1: e._y1, _y0: e._y0 }),
-          },
-        });
-        _defineProperty(Xy, "getDomain", Tl);
-        _defineProperty(Xy, "getData", ml);
-        _defineProperty(Xy, "expectedComponents", [
-          "dataComponent",
-          "labelComponent",
-          "groupComponent",
-          "containerComponent",
-        ]);
         const Qy = Hp(Xy, {
           components: [
             { name: "parent", index: "parent" },
@@ -67747,7 +67222,7 @@ function _toPrimitive(t, r) {
                       var f = null,
                         p = 1 == s.nodeType ? window.getComputedStyle(s) : {};
                       if ("none" == p.display) return null;
-                      if (s == this.root || 9 == s.nodeType) {
+                      if (s == this.root || 9 == s.nodeType)
                         if (((u = !0), s == this.root || s == e))
                           n && !this.root
                             ? !r || (0 == r.width && 0 == r.height)
@@ -67764,7 +67239,7 @@ function _toPrimitive(t, r) {
                             ? ((s = v), (f = d(g, y)))
                             : ((s = null), (a = null));
                         }
-                      } else {
+                      else {
                         var m = s.ownerDocument;
                         s != m.body &&
                           s != m.documentElement &&
