@@ -33,8 +33,8 @@
   </body>
 
   <script>
-    if(window !== 'undefined'){
-      console.log('UA', navigator.userAgent);
+    if (window !== "undefined") {
+      console.log("UA", navigator.userAgent);
     }
     window.__initState = window.__initState || {};
     window.__initState.achievements = {
@@ -153,6 +153,109 @@
           desc: '<div class="caption-video-gallery-b">\n<p><span style="line-height: 107%;">Our signature internship programme <em>Honing Skills in Hospitality</em> welcomes students from a wide range of ethnic, cultural and educational backgrounds to gain hands-on experience in the hospitality industry. Each year, students are paired with a colleague who provides mentorship, support and guidance throughout the internship period. This programme allows for students to work closely with our colleagues, connecting people from different background and perspectives, and offering an opportunity to learn from each other&rsquo;s differences. Prior to the students&rsquo; internship period, we organise culture tours in partnership with our NGO partners to deepen our colleagues&rsquo; understanding of Hong Kong&rsquo;s diverse ethnic communities, their history and cultural practices. Through such activities, we aim to foster mutual understanding to create an inclusive workplace where everyone can thrive.&nbsp;</span></p>\n</div>',
         },
       ],
+    };
+
+    window.__initState.footer = {
+      footerSections: [
+        {
+          Title: "OUR BUSINESSES",
+          Id: "businesses-footer",
+          Links: [
+            { Text: "Hotels", Url: "/" },
+            { Text: "Commercial Properties", Url: "/about" },
+            { Text: "Peak Tram, Retail and Others", Url: "/" },
+            { Text: "Residences", Url: "/" },
+          ],
+        },
+        {
+          Title: "INVESTORS",
+          Id: "investors-footer",
+          Links: [
+            { Text: "Financial Results", Url: "/" },
+            { Text: "General Meetings", Url: "/about" },
+            { Text: "Corporate Announcements", Url: "/" },
+            { Text: "Shareholders' Circulars", Url: "/" },
+          ],
+        },
+        {
+          Title: "SUSTAINABLE LUXURY",
+          Id: "sustainable-footer",
+          Links: [
+            { Text: "Our Guests", Url: "/" },
+            { Text: "Our People", Url: "/about" },
+            { Text: "Our Communities", Url: "/" },
+            { Text: "Sustainability Reports", Url: "/" },
+          ],
+        },
+        {
+          Title: "MEDIA",
+          Id: "media-footer",
+          Links: [
+            { Text: "Press Releases", Url: "/" },
+            { Text: "Media Library", Url: "/about" },
+          ],
+        },
+      ],
+      footerLinks: [
+        { Text: "Contact Us", Url: "/" },
+        { Text: "Sitemap", Url: "/" },
+        { Text: "Data Privacy and Security Policy", Url: "/" },
+        { Text: "Terms of Use", Url: "/" },
+        { Text: "Conditions of Use", Url: "/" },
+        { Text: "Cookie Policy", Url: "/" },
+      ],
+      socialLinks: [
+        {
+          href: "",
+          aria: "linkedin",
+          className: "icon-linkedin",
+          blank: false,
+        },
+        {
+          href: "",
+          aria: "wechat",
+          className: "icon-wechat",
+          blank: true,
+        },
+        {
+          href: "",
+          aria: "instagram",
+          className: "icon-instagram",
+          blank: true,
+        },
+        {
+          href: "",
+          aria: "facebook",
+          className: "icon-facebook",
+          blank: true,
+        },
+        {
+          href: "",
+          aria: "youtube",
+          className: "icon-youtube",
+          blank: true,
+        },
+        {
+          href: "",
+          aria: "twitter",
+          className: "icon-twitter",
+          blank: true,
+        },
+        {
+          href: "",
+          aria: "weibo",
+          className: "icon-weibo",
+          img: "https://dummyimage.com/24x24",
+          blank: true,
+        },
+      ],
+      breadcrumbs: [
+        { text: "Home", Url: "/" },
+        { text: "Luxury", Url: "/investors" },
+        { text: "Guests", Url: "/investors/guest" },
+      ],
+      copyright:
+        "© 2024 The Hongkong and Shanghai Hotels, Limited. All rights reserved.",
     };
   </script>
 </html>
