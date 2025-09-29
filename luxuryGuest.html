@@ -33,6 +33,9 @@
   </body>
 
   <script>
+    if(window !== 'undefined'){
+      console.log('UA', navigator.userAgent);
+    }
     window.__initState = window.__initState || {};
     window.__initState.achievements = {
       title: "key achievements",
